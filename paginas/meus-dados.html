@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/svg" href="../imagens/juntos.svg">
+	<title>Meus Dados</title>
+	 <link rel="stylesheet" href="../css/layout-epa-meus-dados.css">
+	<link href = "https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;800 & display=swap"rel ="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+	 <section id="topo">
+  <header>
+    <nav>
+      <div class= "nav-wrapper">
+        <div class="row">
+          <div class="col s6 m6 l2" >
+          <a href="../index.html"><img src="../imagens/imagem-epa.png"class="logo" alt= "logo" ></a>
+          </div>
+          <div class="col s5 m7 l10 offset-m2 offset-s1" >
+          <a href="#" class="sidenav-trigger   right" id="menu" data-target="mobile-menu"><i class="material-icons">menu</i></a>    
+              <ul class="right hide-on-med-and-down menu-principal"id="base-menu">
+                <li><a  href="mapa.html">Mapa</a></li>
+                <li><a  href="perfil.html">Perfil</a></li>
+                <li><a  href="agenda.html">Agenda</a></li>
+                <li><a  href="chat.html">Meus Chats</a></li>
+                <li><a  href="meus-dados.html">Meus Dados</a></li>
+                <li><a  href="#" onclick="deslogar()">Sair</a></li>
+              </ul>
+            </div><!--.final de col-->
+          <div id="modal1" class="modal">
+            <div class="modal-contente">
+              <h4 id="modal-login">login</h4>
+              <div class="col s12 m10">
+                <label id="modalp" for="email">email</label>
+                <input id="email" class="validate" type="email">
+
+              </div>
+              <div class="col s12 m10">
+
+                <label id="modalp" for="password"> senha</label>
+                <input type="password" id="password" class="validate">
+                
+              </div>
+
+              </div>
+            <div class="modal-footer col s6 m6" id="modal-btnlogar">
+              <a href="#" class="modal-close btn-large">logar</a>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </nav>
+    <ul class="sidenav" id="mobile-menu">
+        <li><a class="mapa" href="mapa.html">Mapa</a></li>
+        <li><a class="perfil" href="perfil.html">Perfil</a></li>
+        <li><a class="agenda" href="agenda.html">Agenda</a></li>
+        <li><a class="chats" href="chat.html">Meus Chats</a></li>
+        <li><a class="meusDados" href="meus-dados.html">Meus Dados</a></li>
+        <li><a href="#" class="btn waves-effect waves-light blue darken-3" onclick="deslogar()">Sair</a></li>
+      </ul>
+  </header>
+  <ul class="sidenav" id="mobile-menu"> 
+    <li><a id="login" class="modal-trigger sidenav-close btn waves-effect waves-light" href="#modal1">login</a></li>
+    
+  </ul>
+  <div class="container">
+    <div class="col s12 m12">
+      <h2>Meus Dados</h2>
+    </div>
+  </div>
+</section>
+
+	
+		 <section id="opcoes">
+		 	<div class="container z-depth-3" >
+		 	 <form id="dados" class="col s12">
+		 	 	<legend>Dados pessoais</legend>
+         	<div class="col s7 m7">
+         		<label for="nome">Nome Completo</label>
+                  <input  id="nomeCompletoMeusDados" type="text" class="validate">
+         	</div>
+	         <div class="row">
+	         	<div class="col s4 m5">
+	         		<label  for="cpf">CPF </label>
+	               <input type="text"  class="inputs tamanhoInput" id="cpfMeusDados">
+	         	</div>
+	         	<div class="col s6 m5 maisProLado">
+	         		<label for="rg">RG</label>
+	               <input type="text" class="inputs tamanhoInput" id="rgMeusDados">
+	         	</div>
+	         </div>
+	            <div class="row">
+	            	<div class="col s4 m5">
+	            		<label for="orgaoemissor">Orgão Emissor</label>
+	               <input type="text" class="inputs tamanhoInput" id="orgaoEmissorMeusDados">
+	            	</div>
+	            	<div class="col s6 m5 maisProLado">
+	            		<label for="dtNascimento">Data de Nascimento</label>
+	               <input type="date" class="inputs tamanhoInput" id="dtNascimentoMeusDados">
+	            	</div>
+	            </div> 
+	             <legend>Endereço</legend>
+                <div class="row">
+                	<div class="col s4 m5">
+                		 <label for="rua">Rua</label>
+	             <input type="text" class="inputs tamanhoInput" id="ruaMeusDados">
+                	</div>
+                	<div class="col s6 m5 maisProLado">
+                		<label for="numeroDaCasa">Número</label>
+	               <input type="text" class="inputs tamanhoInput" id="numeroDaCasaMeusDados">
+                	</div>
+                </div>
+                <div class="row">
+                	<div class="col s4 m5">
+                		<label for="bairro">Bairro</label>
+	              <input type="text" class="inputs tamanhoInput" id="bairroMeusDados" >
+                	</div>
+                	<div class="col s6 	m5 maisProLado">
+                		<label for="cidade">Cidade</label>
+	               <input type="text" class="inputs tamanhoInput" id="cidadeMeusDados" >
+                	</div>
+                </div>
+             		<div class="row">
+             			<div class="col s4 m5">
+                		<label for="estado">Estado</label>
+	                <input type="text" class="inputs tamanhoInput" id="estadoMeusDados" >
+                	</div>
+                	<div class="col s6 m5 maisProLado">
+                		 <label for="cep">CEP</label>
+	                <input type="text" class="inputs tamanhoInput" id="cepMeusDados" >
+                	</div>
+             		</div>
+	         <legend>Informações de contato</legend>
+	           <div class="row">
+	           		<div class="col s4 m5">
+                		<label for="telefone">Telefone</label>
+	             <input type="number" class="inputs tamanhoInput" id="telefoneMeusDados">
+                	</div>
+                	<div class="col s6 m5 maisProLado">
+                		<label for="celular">Celular</label>
+	             <input type="number" class="inputs tamanhoInput" id="celularMeusDados">
+                	</div>
+                	<div class="col s6 m5">
+                		<label for="celular2">Celular 2</label>
+                		<input type="number" class="inputs tamanhoInput" id="celular2MeusDados">
+                	</div>
+	           </div>
+	          
+	          <legend>Login</legend>
+	          <div class="col s5 m5">
+	          	 <label for="email">Email</label>
+	             <input type="email" class="validate" id="cadastroEmailMeusDados">
+	          </div>
+	          <div class="col s5 m5">
+	          	<label for="password">Senha</label>
+	           <input id="cadastroSenhaMeusDados" type="password" class="validate">  
+	          </div>
+	             		<legend>Como você gostaria de pagar?</legend>
+			     		<div class="col s5 m5">
+			     			<label>Titular do Cartão</label>
+			     		<input type="text" class="inputs" id="titularCartaoMeusDados">
+			     		</div>
+			     		<div class="row">
+			     			<div class="col s5 m5">
+
+			 	<label>Bandeira do Cartão</label>    	
+		    <select id="bandeiraCartaoMeusDados">
+		      <option value="1" disabled selected>Selecione</option>
+		      <option value="Visa">Visa</option>
+		      <option value="Mastercard">Mastercard </option>
+		      <option value="Elo">Elo</option>
+		    </select>
+		    </div>
+		    <div class="col s4 m5">
+		    		  <label>Código de Segurança</label>
+		    <input type="text" id="codigoSegurancaMeusDados">
+		    	</div>
+		    	 			</div>
+		    <div class="row">
+		    	
+		    	<div class="col s4 m5">
+		    		<label>Data de Validade</label>
+		    		<input type="date" id="dataValidadeMeusDados">
+		    	</div>
+		    </div>   
+	     	</form>
+	     	<div>
+	  
+	     	<div class="col s12 m12" id="botaoCadastro">
+	     	 <a href="#" onclick="salvarMeusDados()" class="btn waves-effect waves-light" id="btnCadastro">Salvar</a>
+	     	</div>
+	     		
+		 	</div>
+      </section>
+   	<footer class="page-footer ">
+	<div class="container">
+		<div class="row">
+			<div class="col s12 m5 l5">
+				<h5 class="white-text" >Estude ou dê aulas perto de casa, receba novidades no seu email</h5>
+				<div class="input-field inline col s12 m6 l6">
+					<input id="email_inline" type="email" class="validate">
+					<label for="email_inline">digite o seu e-mail</label>
+				</div>
+			</div><!--.final de col-->
+
+			<div id="social" class="col s12 m7 l5 offset-l2">
+				<h5 >Nossas redes</h5>
+				<ul>
+					<li><a href="https://www.facebook.com/mirla.vieiradeoliveira">facebook</a></li>
+					<li><a href="#">youtube</a></li>
+					<li><a href="#">twitter</a></li> 
+					<li><a href="#">google plus</a></li>
+					<li><a href="#">instagram</a></li>
+				</ul>
+			</div>
+			
+		</div><!--.final de row-->
+		<div class="row">
+			<div class="col s6 m8">
+				<div class="parceria">
+				<a href="#" class="link_final"><i class="material-icons">help</i> Perguntas frequentes </a>
+				<div><a href="#meio" class="link_final"><i class="material-icons">info</i> Como começar</a></div>
+				</div>
+			</div>
+			<div class="col s6 m3">
+				<a href="#" class="link_final"><i class="material-icons">people</i> Conheça nossos parceiros</a>
+			<div><a href="#modal2" class="link_final modal-trigger"><i class=material-icons>how_to_reg</i> Seja nosso parceiro</a></div>
+			</div>
+		</div>
+		</div>
+		<div class="footer-copyright">
+            <div class="container">
+            ©2020 Epa-ensino por amor
+            <a class=" teal-text text-lighten-2 right" href="#!">Equipe-52</a>
+            </div>
+		</div><!--.final de conteiner-->
+	</footer>
+<!-- Modal Parceiro --> 
+	<div id="modal2" class="modal col s12"> 
+		<div
+	class="modal-content"> <h4>Quer ser nosso Parceiro?</h4>
+	<div class="col s12 m10">
+		<label for="nomeEmpresa">Nome ou Empresa</label>
+		<input id="nomeEmpresa" type="text">
+		 
+	</div>  
+	<div class="col s12 m10">
+		<label for="emailEmpresa">Qual seu email?</label>
+		<input type="email" id="emailEmpresa" class="validate">
+	</div>
+		</div>
+	 <div class="modal-footer" id="modal2"> <a href="#!" class="modal-close waves-effect
+	waves-green btn-flat white ">Concluído</a> </div> 
+	 </div> <!-- Modal Parceiro -->
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+	<script src="../js/epajs.js"></script>
+	<script src="../js/autentificacao.js"></script>
+	<script src="../js/meus-dados.js"></script>
+
+</body>
+</html>

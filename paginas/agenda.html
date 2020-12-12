@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/svg" href="../imagens/juntos.svg">
+	<title>EPA-Agenda</title>
+  <link href = "https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;800 & display=swap"rel ="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+	<link rel="stylesheet" href="../css/layout-epa-agenda.css">
+</head>
+<body>
+   <section id="topo">
+  <header>
+    <nav>
+      <div class= "nav-wrapper">
+        <div class="row">
+          <div class="col s6 m6 l2" >
+          <a href="../index.html"><img src="../imagens/imagem-epa.png"class="logo" alt= "logo" ></a>
+          </div>
+          <div class="col s5 m7 l10 offset-m2 offset-s1" >
+          <a href="#" class="sidenav-trigger   right" id="menu" data-target="mobile-menu"><i class="material-icons">menu</i></a>    
+              <ul class="right hide-on-med-and-down menu-principal"id="base-menu">
+                <li><a  href="mapa.html">Mapa</a></li>
+                <li><a  href="perfil.html">Perfil</a></li>
+                <li><a  href="agenda.html">Agenda</a></li>
+                <li><a  href="chat.html">Meus Chats</a></li>
+                <li><a  href="meus-dados.html">Meus Dados</a></li>
+                <li><a  href="#" onclick="deslogar()">Sair</a></li>
+              </ul>
+            </div><!--.final de col-->
+          <div id="modal1" class="modal">
+            <div class="modal-contente">
+              <h4 id="modal-login">login</h4>
+              <div class="col s12 m10">
+                <label id="modalp" for="email">email</label>
+                <input id="email" class="validate" type="email">
+
+              </div>
+              <div class="col s12 m10">
+
+                <label id="modalp" for="password"> senha</label>
+                <input type="password" id="password" class="validate">
+                
+              </div>
+
+              </div>
+            <div class="modal-footer col s6 m6" id="modal-btnlogar">
+              <a href="#" class="modal-close btn-large">logar</a>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </nav>
+    <ul class="sidenav" id="mobile-menu">
+        <li><a class="mapa" href="mapa.html">Mapa</a></li>
+        <li><a class="perfil" href="perfil.html">Perfil</a></li>
+        <li><a class="agenda" href="agenda.html">Agenda</a></li>
+        <li><a class="chats" href="chat.html">Meus Chats</a></li>
+        <li><a class="meusDados" href="meus-dados.html">Meus Dados</a></li>
+        <li><a href="#" class="btn waves-effect waves-light blue darken-3" onclick="deslogar()">Sair</a></li>
+      </ul>
+  </header>
+  <ul class="sidenav" id="mobile-menu"> 
+    <li><a id="login" class="modal-trigger sidenav-close btn waves-effect waves-light" href="#modal1">login</a></li>
+    
+  </ul>
+  <div class="container">
+    <div class="col s12 m12">
+      <h2>Agenda</h2>
+    </div>
+  </div>
+</section>
+
+  <section id="agenda">
+    <div class="container">
+     <div class="col s6 m6 l8 ">
+       <table  bgcolor="#FFFFFF" id="agenda">
+         <tr bgcolor="#FFFFFF"><th colspan="3" id="mes" >Dezembro</th><th colspan="6" id="ano">2020</th></tr>
+         <tr id="diasDaSemana"><th>DOM</th><th>SEG</th><th>TER</th><th>QUA</th><th>QUI</th><th>SEX</th><th>SAB</th></tr>
+        <tr class="segASextaTab">
+           <td><input type="button" onclick="caixaAgenda()" class="botaoAgendar"id="agendar" value="+"><p class="agendado" id="mostrarnagenda01"></p><p class="agendado" id="mostrarnagenda02"></p><p class="agendado" id="mostrarnagenda03"></p>  </td>
+           <td><input type="button" onclick="caixaAgenda()" class="botaoAgendar"id="agendar" value="+"><p class="agendado" id="mostrarnagenda01"></p><p class="agendado" id="mostrarnagenda02"></p><p class="agendado" id="mostrarnagenda03"></p> </td>
+           <td><input type="button" onclick="caixaAgenda()" class="botaoAgendar"id="agendar" value="+"><p class="agendado" id="mostrarnagenda01"></p><p class="agendado" id="mostrarnagenda02"></p><p class="agendado" id="mostrarnagenda03"></p>  </td>
+           <td><input type="button" onclick="caixaAgenda()" class="botaoAgendar"id="agendar" value="+"><p class="agendado" id="mostrarnagenda01"></p><p class="agendado" id="mostrarnagenda02"></p><p class="agendado" id="mostrarnagenda03"></p>  </td>
+           <td><input type="button" onclick="caixaAgenda()" class="botaoAgendar"id="agendar" value="+"><p class="agendado" id="mostrarnagenda01"></p><p class="agendado" id="mostrarnagenda02"></p><p class="agendado" id="mostrarnagenda03"></p>  </td>
+           <td><input type="button" onclick="caixaAgenda()" class="botaoAgendar"id="agendar" value="+"><p class="agendado" id="mostrarnagenda01"></p><p class="agendado" id="mostrarnagenda02"></p><p class="agendado" id="mostrarnagenda03"></p>  </td>
+           <td><input type="button" onclick="caixaAgenda()" class="botaoAgendar"id="agendar" value="+"><p class="agendado" id="mostrarnagenda01"></p><p class="agendado" id="mostrarnagenda02"></p><p class="agendado" id="mostrarnagenda03"></p> 1</td>
+         </tr> 
+        <tr class="segASextaTab">
+           <td><input type="button" onclick="caixaAgenda()" class="botaoAgendar"id="agendar" value="+"><p class="agendado" id="mostrarnagenda01"></p><p class="agendado" id="mostrarnagenda02"></p><p class="agendado" id="mostrarnagenda03"></p> 2</td>
+           <td><input type="button" onclick="caixaAgenda()" class="botaoAgendar"id="agendar" value="+"><p class="agendado" id="mostrarnagenda01"></p><p class="agendado" id="mostrarnagenda02"></p><p class="agendado" id="mostrarnagenda03"></p> 3</td>
+           <td><input type="button" onclick="caixaAgenda()" class="botaoAgendar"id="agendar" value="+"><p class="agendado" id="mostrarnagenda01"></p><p class="agendado" id="mostrarnagenda02"></p><p class="agendado" id="mostrarnagenda03"></p> 4</td>
+           <td><input type="button" onclick="caixaAgenda()" class="botaoAgendar"id="agendar" value="+"><p class="agendado" id="mostrarnagenda01"></p><p class="agendado" id="mostrarnagenda02"></p><p class="agendado" id="mostrarnagenda03"></p> 5</td>
+           <td><input type="button" onclick="caixaAgenda()" class="botaoAgendar"id="agendar" value="+"><p class="agendado" id="mostrarnagenda01"></p><p class="agendado" id="mostrarnagenda02"></p><p class="agendado" id="mostrarnagenda03"></p> 6</td>
+           <td><input type="button" onclick="caixaAgenda()" class="botaoAgendar"id="agendar" value="+"><p class="agendado" id="mostrarnagenda01"></p><p class="agendado" id="mostrarnagenda02"></p><p class="agendado" id="mostrarnagenda03"></p> 7</td>
+           <td><input type="button"onclick="caixaAgenda()"  class="botaoAgendar"id="agendar" value="+"><p class="agendado" id="mostrarnagenda01"></p><p class="agendado" id="mostrarnagenda02"></p><p class="agendado" id="mostrarnagenda03"></p> 8</td>
+          </tr>
+         <tr class="segASextaTab">
+           <td><input type="button" onclick="caixaAgenda()" class="botaoAgendar"id="agendar" value="+"><p class="agendado" id="mostrarnagenda01"></p><p class="agendado" id="mostrarnagenda02"></p><p class="agendado" id="mostrarnagenda03"></p> 9</td>
+           <td><input type="button" onclick="caixaAgenda()" class="botaoAgendar"id="agendar" value="+"><p class="agendado" id="mostrarnagenda01"></p><p class="agendado" id="mostrarnagenda02"></p><p class="agendado" id="mostrarnagenda03"></p>10</td>
+           <td><input type="button" onclick="caixaAgenda()" class="botaoAgendar"id="agendar" value="+"><p class="agendado" id="mostrarnagenda01"></p><p class="agendado" id="mostrarnagenda02"></p><p class="agendado" id="mostrarnagenda03"></p>11</td>
+           <td><input type="button" onclick="caixaAgenda()" class="botaoAgendar"id="agendar" value="+"><p class="agendado" id="mostrarnagenda01"></p><p class="agendado" id="mostrarnagenda02"></p><p class="agendado" id="mostrarnagenda03"></p>12</td>
+           <td><input type="button" onclick="caixaAgenda()" class="botaoAgendar"id="agendar" value="+"><p class="agendado" id="mostrarnagenda01"></p><p class="agendado" id="mostrarnagenda02"></p><p class="agendado" id="mostrarnagenda03"></p>13</td>
+           <td><input type="button" onclick="caixaAgenda()" class="botaoAgendar"id="agendar" value="+"><p class="agendado" id="mostrarnagenda01"></p><p class="agendado" id="mostrarnagenda02"></p><p class="agendado" id="mostrarnagenda03"></p>14</td>
+           <td><input type="button" onclick="caixaAgenda()" class="botaoAgendar"id="agendar" value="+"><p class="agendado" id="mostrarnagenda01"></p><p class="agendado" id="mostrarnagenda02"></p><p class="agendado" id="mostrarnagenda03"></p>15</td>
+          </tr>
+          <tr class="segASextaTab">
+           <td><input type="button" onclick="caixaAgenda()" class="botaoAgendar"id="agendar" value="+"><p class="agendado" id="mostrarnagenda01"></p><p class="agendado" id="mostrarnagenda02"></p><p class="agendado" id="mostrarnagenda03"></p>16</td>
+           <td><input type="button" onclick="caixaAgenda()" class="botaoAgendar"id="agendar" value="+"><p class="agendado" id="mostrarnagenda01"></p><p class="agendado" id="mostrarnagenda02"></p><p class="agendado" id="mostrarnagenda03"></p>17</td>
+           <td><input type="button" onclick="caixaAgenda()" class="botaoAgendar"id="agendar" value="+"><p class="agendado" id="mostrarnagenda01"></p><p class="agendado" id="mostrarnagenda02"></p><p class="agendado" id="mostrarnagenda03"></p>18</td>
+           <td><input type="button" onclick="caixaAgenda()" class="botaoAgendar"id="agendar" value="+"><p class="agendado" id="mostrarnagenda01"></p><p class="agendado" id="mostrarnagenda02"></p><p class="agendado" id="mostrarnagenda03"></p>19</td>
+           <td><input type="button" onclick="caixaAgenda()" class="botaoAgendar"id="agendar" value="+"><p class="agendado" id="mostrarnagenda01"></p><p class="agendado" id="mostrarnagenda02"></p><p class="agendado" id="mostrarnagenda03"></p>20</td>
+           <td><input type="button" onclick="caixaAgenda()" class="botaoAgendar"id="agendar" value="+"><p class="agendado" id="mostrarnagenda01"></p><p class="agendado" id="mostrarnagenda02"></p><p class="agendado" id="mostrarnagenda03"></p>21</td>
+           <td><input type="button" onclick="caixaAgenda()" class="botaoAgendar"id="agendar" value="+"><p class="agendado" id="mostrarnagenda01"></p><p class="agendado" id="mostrarnagenda02"></p><p class="agendado" id="mostrarnagenda03"></p>22</td>
+          </tr>
+         <tr class="segASextaTab">
+           <td><input type="button" onclick="caixaAgenda()" class="botaoAgendar"id="agendar" value="+"><p class="agendado" id="mostrarnagenda01"></p><p class="agendado" id="mostrarnagenda02"></p><p class="agendado" id="mostrarnagenda03"></p>23</td> 
+           <td><input type="button" onclick="caixaAgenda()" class="botaoAgendar"id="agendar" value="+"><p class="agendado" id="mostrarnagenda01"></p><p class="agendado" id="mostrarnagenda02"></p><p class="agendado" id="mostrarnagenda03"></p>24</td> 
+           <td><input type="button" onclick="caixaAgenda()" class="botaoAgendar"id="agendar" value="+"><p class="agendado" id="mostrarnagenda01"></p><p class="agendado" id="mostrarnagenda02"></p><p class="agendado" id="mostrarnagenda03"></p>25</td>
+           <td><input type="button" onclick="caixaAgenda()" class="botaoAgendar"id="agendar" value="+"><p class="agendado" id="mostrarnagenda01"></p><p class="agendado" id="mostrarnagenda02"></p><p class="agendado" id="mostrarnagenda03"></p>26</td>
+           <td><input type="button" onclick="caixaAgenda()" class="botaoAgendar"id="agendar" value="+"><p class="agendado" id="mostrarnagenda01"></p><p class="agendado" id="mostrarnagenda02"></p><p class="agendado" id="mostrarnagenda03"></p>27</td>
+           <td><input type="button" onclick="caixaAgenda()" class="botaoAgendar"id="agendar" value="+"><p class="agendado" id="mostrarnagenda01"></p><p class="agendado" id="mostrarnagenda02"></p><p class="agendado" id="mostrarnagenda03"></p>28</td>
+           <td><input type="button" onclick="caixaAgenda()" class="botaoAgendar"id="agendar" value="+"><p class="agendado" id="mostrarnagenda01"></p><p class="agendado" id="mostrarnagenda02"></p><p class="agendado" id="mostrarnagenda03"></p>29</td>
+         </tr>
+         <tr class="segASextaTab">
+         <td><input type="button"  class="botaoAgendar"id="agendar" value="+">30<p id="botaoAgendar"><p></td>
+         	<td><input type="button" onclick="caixaAgenda()"  class="botaoAgendar"id="agendar" value="+"><p class="agendado" id="mostrarnagenda01"></p><p class="agendado" id="mostrarnagenda02"></p><p class="agendado" id="mostrarnagenda03"></p></td>
+
+           <td><input type="button" onclick="caixaAgenda()" class="botaoAgendar"id="agendar" value="+"></td>
+           <td><input type="button" onclick="caixaAgenda()" class="botaoAgendar"id="agendar" value="+"></td> 
+           <td><input type="button" onclick="caixaAgenda()" class="botaoAgendar"id="agendar" value="+"></td>
+           <td><input type="button" onclick="caixaAgenda()" class="botaoAgendar"id="agendar" value="+"></td>
+           <td><input type="button" onclick="caixaAgenda()" class="botaoAgendar"id="agendar" value="+"></td>
+    </tr>
+       </table>
+      </div>
+     </div >
+       <dialog id="caixaAgenda" closed >
+       	<input type="button" id="fechar" onclick="caixaAgenda02()" class="botaoFechaAgenda" value="X">
+       	<h3>Data</h3>
+	     <input type="date"   id="data01">
+	   <h3>Hora</h3>
+	     <input type="time"   id="hora" >
+	     <h3>Aluno</h3>
+	     <input type="text"   id="aluno" >
+	      <p> <input type="button" id="botaoAgendar01" onclick="caixaAgenda02()" value="agendar" ></p>
+       </dialog>
+  </section>
+ <footer class="page-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col s12 m5 l6">
+        <h5 class="white-text" >Estude ou dê aulas perto de casa, receba novidades no seu email</h5>
+        <div class="input-field inline col s12 m6 l6">
+           <input id="email_inline" type="email" class="validate">
+         <label for="email_inline">digite o seu e-mail</label>
+        </div>
+      </div><!--.final de col-->
+      <div id="social" class="col s12 m7 l5 offset-l1">
+        <h5 >Nossas redes</h5>
+        <ul>
+          <li><a href="#">facebook</a></li>
+          <li><a href="#">youtube</a></li>
+          <li><a href="#">twitter</a></li>
+          <li><a href="#">google plus</a></li>
+          <li><a href="#">instagram</a></li>
+        </ul>
+      </div>
+    </div><!--.final de row-->
+    <div class="row">
+      <div class="col s6 m8">
+        <div class="parceria">
+        <a href="perguntas-frequentes.html" class="link_final"><i class="material-icons">help</i> Perguntas frequentes </a>
+        <div><a href="como-começar.html" class="link_final"><i class="material-icons">info</i> Como começar</a></div>
+        </div>
+      </div>
+      <div class="col s6 m3">
+        <a href="#" class="link_final"><i class="material-icons">people</i> Conheça nossos parceiros</a>
+      <div><a href="#modal2" class="link_final modal-trigger"><i class=material-icons>how_to_reg</i> Seja nosso parceiro</a></div>
+      </div>
+    </div>
+    </div>
+    </div>
+    <div class="footer-copyright">
+            <div class="container">
+            ©2020 Epa-ensino por amor
+            <a class=" teal-text text-lighten-2 right" href="#!">Equipe-52</a>
+      </div><!--.final de conteiner-->
+    </div>
+</footer>
+ <!-- Modal Parceiro --> 
+  <div id="modal2" class="modal col s12"> 
+    <div
+  class="modal-content"> <h4>Quer ser nosso Parceiro?</h4>
+  <div class="col s12 m10">
+    <label for="nomeEmpresa">Nome ou Empresa</label>
+    <input id="nomeEmpresa" type="text">
+     
+  </div>  
+  <div class="col s12 m10">
+    <label for="emailEmpresa">Qual seu email?</label>
+    <input type="email" id="emailEmpresa" class="validate">
+  </div>
+    </div>
+   <div class="modal-footer" id="modal2"> <a href="#!" class="modal-close waves-effect
+  waves-green btn-flat white ">Concluído</a> </div> 
+   </div> <!-- Modal Parceiro -->
+
+  <script>
+        function caixaAgenda(){
+          document.getElementById("caixaAgenda").setAttribute("open","")
+        }
+        function caixaAgenda02(){
+          document.getElementById("caixaAgenda").removeAttribute("open","")
+        }
+       </script>
+    
+      <script src="../js/agenda.js"></script>
+      <script src="../js/autentificacao.js"></script>
+      <script src="../js/epajs.js"></script>  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+</body>
+</html>

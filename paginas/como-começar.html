@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/svg" href="../imagens/juntos.svg">
+	<title>Como começar</title>
+	<link href = "https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;800 & display=swap"rel ="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+	<link rel="stylesheet" href="../css/layout-epa-como-comecar.css">
+</head>
+<body>
+<section id="topo">
+	<header>
+		<nav>
+			<div class= "nav-wrapper">
+				<div class="row">
+					<div class="col s6 m6" >
+					<a href="../index.html"><img src="../imagens/imagem-epa.png"class="logo" alt= "logo" ></a>
+					</div>
+					<div class="col s4 m6 offset-s2">
+						<a href="#" class="sidenav-trigger" id="menu" data-target="mobile-menu"><i class="material-icons">menu</i></a>
+						<ul class="right hide-on-med-and-down">
+							<li><a id="login" class="modal-trigger" href="#modal1">login</a></li>
+						</ul>
+					</div>
+					<div id="modal1" class="modal">
+						<div class="modal-contente">
+							<h4 id="modal-login">login</h4>
+							<div class="col s12 m10">
+								<label id="modalp" for="email">email</label>
+								<input id="email" class="validate" type="email">
+
+							</div>
+							<div class="col s12 m10">
+
+								<label id="modalp" for="senha"> senha</label>
+								<input type="password" id="senha" class="validate">
+								
+							</div>
+
+							</div>
+						<div class="modal-footer col s6 m6" id="modal-btnlogar">
+							<a href="#" class="modal-close btn-large" onclick="logar()">logar</a>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</nav>
+	</header>
+	<ul class="sidenav" id="mobile-menu">	
+		<li><a id="login" class="modal-trigger sidenav-close btn waves-effect waves-light" href="#modal1">login</a></li>
+		
+	</ul>
+	<div class="container">
+		<div class="col s12 m12">
+			<h2>como começar</h2>
+			
+		</div>
+		<div class=" col s12 m>12">
+			<p id="aprender">Vamos aprender</p>
+
+			
+		</div>
+		
+	</div>
+</section>
+<section id="meio">
+	<div class="container">
+		<div class="row">
+		<div class="col s12 m5">
+			<h4>Primeiro passo</h4>
+			<p>Primeiro precisamos decidir o que seremos, clicaremos em “Estudar” caso formos estudantes e so queremos estudar ou clicamos em “Dar aula” caso formos professores ou alunos  que querem dar reforço.</p>
+		</div>
+		<div class=" col s12 m5">
+			<img width="600" alt=" foto da pagina principal" id="foto-pag-principal" src="../imagens/sds.png">
+
+		</div>
+
+
+				
+	</div>
+	<div class="row">
+		<div class="col s12 m5">
+		<h4>Segundo passo</h4>
+		<p>Após isso iremos  para a página de  cadastro e é so começar a preencher.
+Os dois cadastros são basicamente iguais, mas se você  escolheu o “Dar aulas” terá  2 campos a mais para preencher, um para matérias capaz de ensinar e  sua experiência como professor.</p>
+          </div>
+		<div class="col s12 m5">
+			<img width="600" alt="foto do cadastro" id="foto-cadastro" height="300" src="../imagens/sss.png">
+			 
+		</div>
+	</div>
+	<div class="row">
+		<div class="col s12 m5">
+			<h4>Terceiro passo</h4>
+			<p>Vamos ir no nosso perfil e começaremos a  configurar as informações que apareceram no mapa</p>
+			
+		</div>
+		<div class="col s12 m5">
+			<img width="600" height="400" id="perfil-foto-como-comecar" alt="foto do perfil" src="../imagens/perfil-foto-como-comecar.png">
+			
+		</div>
+
+	</div>
+	<div class="row">
+		<div class=" col s12 m5">
+			<h4>quarto passo</h4>
+			<p>Apos terminar de configurar o seu perfil, vá para  o  mapa e  começe a procurar professores ou esperar os alunos te encontrarem.</p>
+			
+		</div>
+		<div class=" col s12 m5">
+			<img width="600" height="300" id="foto-do-mapa" src="../imagens/foto-mapa.png">
+		</div>
+			
+		</div>
+		<div class="row">
+			<div class="col s12 m5">
+				<h4 id="caso-tenha-duvidas">Caso tenha duvidas</h4>
+				<p>Pode clicar nas perguntas frequentes para sanar a sua dúvida ou nos chame em nossas redes sociais</p>
+				
+			</div>
+			<div class="rol s12 m5">
+				<img width="500" height="200" id="foto-perguntas1" src="../imagens/saiba-como.png">
+				<img class="foto-2-saiba" width= "500" id="foto-perguntas2" heigth="200" src="../imagens/saibacomo1.png">
+			</div>
+			
+		</div>
+
+			</div>
+
+
+	</div>
+	
+</section>
+
+<footer class="page-footer">
+	<div class="container">
+		<div class="row">
+			<div class="col s12 m5">
+				<h5 class="white-text">
+					Estude ou dê aulas perto de casa, receba novidades no seu email
+
+				</h5>
+				<div class="input-field inline col s12 m6 ">
+					<input type="email" class="validate" id="email_inline">
+					<label for="email_inline">Digite seu email</label>
+				</div>
+				
+			</div>
+			<div id="social" class="col s12 m6 l5 offset-l2 offset-m1">
+				<h5>Nossas redes</h5>
+				<ul>
+					<li><a href="#">facebook</a></li>
+					<li><a href="#">youtube</a></li>
+					<li><a href="#">twitter</a></li>
+					<li><a href="#">google plus</a></li>
+					<li><a href="#">instagram</a></li>
+
+				</ul>
+			</div>
+			
+		</div>
+		<div class="row">
+			<div class="col s6 m8">
+				<div class="parceria">
+					<a class="link_final" href="perguntas-frequentes.html"><i class="material-icons">help</i>Perguntas freguentes</a>
+					<div>
+						<a class="link_final" href="como-começar.html"><i class="material-icons">info</i>Como começar</a>
+					</div>
+
+					
+				</div>
+				
+			</div>
+			<div class="col s6 m3">
+				<a class="link_final" href="#"><i class="material-icons">people</i>Conheçar nossos parceiros</a>
+				<div><a class="link_final modal-trigger"href="#modal2"><i class="material-icons">how_to_reg</i>Seja nosso parceiro</a></div>
+				
+					
+				</div>
+				
+			</div>
+			
+		</div>
+		<div class="footer-copyright">
+			<div class="container">©️2020 Epa-ensino por amor
+				<a class="teal-text text-lighten-2 right" href="#">equipe-52</a>
+				
+			</div>
+			
+		</div>
+</footer>
+	<!-- Modal Parceiro --> 
+	<div id="modal2" class="modal col s12"> 
+		<div
+	class="modal-content"> <h4>Quer ser nosso Parceiro?</h4>
+	<div class="col s12 m10">
+		<label for="nomeEmpresa">Nome ou Empresa</label>
+		<input id="nomeEmpresa" type="text">
+		 
+	</div>  
+	<div class="col s12 m10">
+		<label for="emailEmpresa">Qual seu email?</label>
+		<input type="email" id="emailEmpresa" class="validate">
+	</div>
+		</div>
+	 <div class="modal-footer" id="modal2"> <a href="#!" class="modal-close waves-effect
+	waves-green btn-flat white ">Concluído</a> </div> 
+	 </div> <!-- Modal Parceiro -->
+	
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="../js/epajs.js"></script>	
+</body>
+</html>

@@ -1,0 +1,179 @@
+	<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/svg" href="../imagens/juntos.svg">
+	<title>Perfil</title>
+	<link href = "https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;800 & display=swap"rel ="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+	<link rel="stylesheet" href="../css/layout-epa-perfil.css">
+</head>
+<body>
+	<section id="topo">
+		<header>
+			<nav>
+				<div class="nav-wrapper">
+					<div class="row">
+						<div class="col s6 m2 l2">
+							<a href="../index.html"><img src="../imagens/imagem-epa.png" class="logo" alt="logo"></a>
+						</div><!--.final de col-->
+						<!--offset-m1 para a barra de menu e m2 para o normal-->
+				<div class="col s5 m7 l10 offset-m2 offset-s1" >
+					<a href="#" class="sidenav-trigger   right" id="menu" data-target="mobile-menu"><i class="material-icons">menu</i></a>		
+							<ul class="right hide-on-med-and-down menu-principal"id="base-menu">
+								<li><a  href="mapa.html">Mapa</a></li>
+								<li><a  href="perfil.html">Perfil</a></li>
+								<li><a  href="agenda.html">Agenda</a></li>
+								<li><a  href="chat.html">Meus Chats</a></li>
+								<li><a  href="meus-dados.html">Meus Dados</a></li>
+								<li><a  href="#" onclick="deslogar()">Sair</a></li>
+							</ul>
+						</div><!--.final de col-->
+					</div><!--.final de row-->
+				</div><!--.final de navbar-->
+			</nav><!--.final de nav-->
+			<ul class="sidenav" id="mobile-menu">
+				<li><a class="mapa" href="mapa.html">Mapa</a></li>
+				<li><a class="perfil" href="perfil.html">Perfil</a></li>
+				<li><a class="agenda" href="agenda.html">Agenda</a></li>
+				<li><a class="chats" href="chat.html">Meus Chats</a></li>
+				<li><a class="meusDados" href="meus-dados.html">Meus Dados</a></li>
+				<li><a href="#" class="btn waves-effect waves-light blue darken-3" onclick="deslogar()">Sair</a></li>
+			</ul>
+		</header>
+		<div class="col s12 m12">
+			<h2>Perfil</h2>
+		</div>
+		</div><!--.final de col-->
+		<div class="perfil file-field col s4 m4">
+		<img class="circle" src="../imagens/foto-perfil.jpg" width="180" height="160">
+		<input type="file" >
+		</div><!--.final de background-->
+	</section><!--.final de section topo-->
+	
+		<section id="meio">
+			<div class="container ">
+				<form class="col s12 formNomes z-depth-2">
+				<div class="row">
+					<div class="col s12 m4"> 
+						<label for="nome" class="descricao">Nome</label>
+						<input  id="nomePerfil" type="text" class="validate">
+					</div>
+					<div class="col s12 m4 divSobreNome ">
+						<label for="sobreNome" class="descricao">Sobrenome</label>
+						<input  id="sobrenomePerfil" type="text" class="validate">
+					</div>
+				</div>
+			</form>
+			</div>
+			<div class="container">
+				<form class="col s12 m5  formTelefone z-depth-2">
+						<div class="col m5 ">
+							<i class="material-icons prefix">phone</i>
+							  <label for="telefone" class="descricao">Telefone para contato</label>
+         					 <input id="telefone" data-inputmask="'mask':'9','repeat':10, 'greedy' : false" type="tel" class="validate">
+ 						 </div>
+				</form>
+			</div>
+			<div class="container">
+				<form class="col s12 m12 formSobreVoce z-depth-2">
+						<div class="col m5">
+							<label for="sobreVoce" class="descricao">Escreva um pouco sobre você</label>
+							<textarea id="sobreVoce" class="materialize-textarea"></textarea>
+ 						 </div>
+				</form>
+			</div>
+			<div class="container">
+				<form class="col s12 m12 formMateriaPreco z-depth-2">
+						<div class="col m5">
+							<label for="materiaPreco" class="descricao">Materias, séries	 e  preços</label>
+							<textarea id="materiaPreco" class="materialize-textarea"></textarea>
+ 						 </div>
+				</form>
+			</div>
+				<div class="container">
+					<div class="col s12 m12 ">
+						<a href="#" class="btn btnSalvar waves-effect waves-light" onclick="
+						salvarDadosPerfil()	">Salvar</a>
+					</div>
+				</div>
+		</section>
+<footer class="page-footer">
+	<div class="container">
+		<div class="row">
+			<div class="col s12 m5 l6">
+				<h5 class="white-text" >Estude ou dê aulas perto de casa, receba novidades no seu email</h5>
+				<div class="input-field inline col s12 m6 l6">
+					 <input id="email_inline" type="email" class="validate">
+				 <label for="email_inline">digite o seu e-mail</label>
+				</div>
+			</div><!--.final de col-->
+
+			<div id="social" class="col s12 m7 l5 offset-l1">
+				<h5 >Nossas redes</h5>
+				<ul>
+					<li><a href="#">facebook</a></li>
+					<li><a href="#">youtube</a></li>
+					<li><a href="#">twitter</a></li>
+					<li><a href="#">google plus</a></li>
+					<li><a href="#">instagram</a></li>
+				</ul>
+			</div>
+		</div><!--.final de row-->
+		<div class="row">
+			<div class="col s6 m8">
+				<div class="parceria">
+				<a href="perguntas-frequentes.html" class="link_final"><i class="material-icons">help</i> Perguntas frequentes </a>
+				<div><a href="como-começar.html" class="link_final"><i class="material-icons">info</i> Como começar</a></div>
+				</div>
+			</div>
+			<div class="col s6 m3">
+				<a href="#" class="link_final"><i class="material-icons">people</i> Conheça nossos parceiros</a>
+			<div><a href="#modal2" class="link_final modal-trigger"><i class=material-icons>how_to_reg</i> Seja nosso parceiro</a></div>
+			</div>
+		</div>
+		</div>
+		</div>
+		<div class="footer-copyright">
+            <div class="container">
+            ©2020 Epa-ensino por amor
+            <a class=" teal-text text-lighten-2 right" href="#!">Equipe-52</a>
+        </div>
+    </div>
+</footer>
+
+	</div><!--.final de conteiner-->
+  <!-- Modal Parceiro --> 
+	<div id="modal2" class="modal col s12"> 
+		<div
+	class="modal-content"> <h4>Quer ser nosso Parceiro?</h4>
+	<div class="col s12 m10">
+		<label for="nomeEmpresa">Nome ou Empresa</label>
+		<input id="nomeEmpresa" type="text">
+		 
+	</div>  
+	<div class="col s12 m10">
+		<label for="emailEmpresa">Qual seu email?</label>
+		<input type="email" id="emailEmpresa" class="validate">
+	</div>
+		</div>
+	 <div class="modal-footer" id="modal2"> <a href="#!" class="modal-close waves-effect
+	waves-green btn-flat white ">Concluído</a> </div> 
+	 </div> <!-- Modal Parceiro -->
+
+
+
+
+
+	<script src="../js/autentificacao.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+	<script >  M.AutoInit();</script>
+	<script src="../js/epajs.js"></script>
+	<script src="../js/perfil.js"></script>
+</body>
+</html>
+
+

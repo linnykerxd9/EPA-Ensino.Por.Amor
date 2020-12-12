@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/svg" href="../imagens/juntos.svg">
+  <title>Perguntas frequentes</title>
+   <link rel="stylesheet" href="../css/layout-epa-perguntas-frequentes.css">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Krona+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@500&display=swap" rel="stylesheet">
+  <link href = "https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;800 & display=swap"rel ="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+  <section id="topo">
+    <nav>
+      <div class="nav-wapper">
+        <div class="col s2 m3 offset-s1">
+          <a href="../index.html"><img src="../imagens/imagem-epa.png" alt="logo" class="logo"></a>
+        </div>
+        <div class="col s4 m4 l5 right">
+        <ul class="right">
+          <li><a href="#modal1" class="modal-trigger" id="login" >Fazer login</a></li>
+        </ul>
+      </div>
+      </div>
+    </nav>
+    <div id="modal1" class="modal">
+      <div class="modal-content">
+        <h4 id="modal-login">Login</h4>
+        <div class="col s12 m10">
+               <label id="modalp" for="email">Email</label>
+               <input type="email" class="validate" id="email">
+            </div>
+            <div class="col s12 m10">
+              <label id="modalp" for="password">Senha</label>
+             <input id="senha" type="password" class="validate">  
+            </div>   
+      </div>    
+      <div class="modal-footer col s12 m6" id="modal-btnLogar">
+         <a href="#!" class="modal-close waves-effect btn-large waves-green left" onclick="logar()">Logar</a>
+      </div>    
+      </div>
+    <header class="container">
+    <h1>Perguntas frequentes</h1>
+    </header>
+  </section>
+
+<section id="conteudo">
+
+  <ul class="collapsible popout" data-collapsible="accordion" id="coco">
+    <li >
+      <div class="collapsible-header"><i class="material-icons">chevron_right</i>O que significa "EPA"?</div>
+      <div class="collapsible-body"><span>EPA é a sigla para "Ensino por Amor"</span></div>
+    </li>
+    <li>
+      <div class="collapsible-header"><i class="material-icons">chevron_right</i>Qual o intuito da plataforma?</div>
+      <div class="collapsible-body"><span>A plataforma tem por intuito facilitar o encontro entre estudantes e professores para realização de aulas de reforço.</span></div>
+    </li>
+    <li>
+      <div class="collapsible-header"><i class="material-icons">chevron_right</i>Quais são as formas de pagamentos aceitas?</div>
+      <div class="collapsible-body"><span>Boletos, cartões de crédito, débito e transferência bancária. </span></div>
+    </li>
+     <li>
+      <div class="collapsible-header"><i class="material-icons">chevron_right</i>Como os preços serão definidos?</div>
+      <div class="collapsible-body"><span>Os professores tem total autonomia para definir os preços de sua hora-aula. Estes poderão ser negociados entre as partes para a execução da aula. 
+</span></div>
+    </li>
+     <li>
+      <div class="collapsible-header"><i class="material-icons">chevron_right</i>Onde as aulas acontecerão? </div>
+      <div class="collapsible-body"><span>O Local das aulas será determinado por estudante e professor.</span></div>
+    </li>
+     <li>
+      <div class="collapsible-header"><i class="material-icons">chevron_right</i>Tem idade ou escolaridade mínima para ser aluno?</div>
+      <div class="collapsible-body"><span>Não. A nossa plataforma está aberta para usuários de todas idades e grau de escolaridade. Vale ressaltar a necessidade do gerenciamento dos pais para o caso de estudantes menores de 18 anos.</span></div>
+    </li>
+     <li>
+      <div class="collapsible-header"><i class="material-icons">chevron_right</i>Sou professor, e gostaria de saber se é preciso pagar alguma taxa para estar cadastrado na plataforma.</div>
+      <div class="collapsible-body"><span>Não. Não existe cobrança para permanência e anúncios de professores em nossa plataforma.</span></div>
+    </li>
+     <li>
+      <div class="collapsible-header"><i class="material-icons">chevron_right</i>É necessário diploma para dar aulas particulares?</div>
+      <div class="collapsible-body"><span>Não. Nossa plataforma está aberta para as mais variadas trocas de conhecimentos. Caso tenha expertise em algum conteúdo, será bem vindo. 
+(Recomendamos aos professores exibir portfólios, comprovando seus conhecimentos)</span></div>
+    </li>
+    
+  </ul>
+</section>
+<footer class="page-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col s12 m5 l6">
+        <h5 class="white-text" >Estude ou dê aulas perto de casa, receba novidades no seu email</h5>
+        <div class="input-field inline col s12 m6 l6">
+           <input id="email_inline" type="email" class="validate">
+         <label for="email_inline">digite o seu e-mail</label>
+        </div>
+      </div><!--.final de col-->
+      <div id="social" class="col s12 m7 l5 offset-l1">
+        <h5 >Nossas redes</h5>
+        <ul>
+          <li><a href="#">facebook</a></li>
+          <li><a href="#">youtube</a></li>
+          <li><a href="#">twitter</a></li>
+          <li><a href="#">google plus</a></li>
+          <li><a href="#">instagram</a></li>
+        </ul>
+      </div>
+    </div><!--.final de row-->
+    <div class="row">
+      <div class="col s6 m8">
+        <div class="parceria">
+        <a href="perguntas-frequentes.html" class="link_final"><i class="material-icons">help</i> Perguntas frequentes </a>
+        <div><a href="como-começar.html" class="link_final"><i class="material-icons">info</i> Como começar</a></div>
+        </div>
+      </div>
+      <div class="col s6 m3">
+        <a href="#" class="link_final"><i class="material-icons">people</i> Conheça nossos parceiros</a>
+      <div><a href="#modal2" class="link_final modal-trigger"><i class=material-icons>how_to_reg</i> Seja nosso parceiro</a></div>
+      </div>
+    </div>
+    </div>
+    </div>
+    <div class="footer-copyright">
+            <div class="container">
+            ©2020 Epa-ensino por amor
+            <a class=" teal-text text-lighten-2 right" href="#!">Equipe-52</a>
+      </div><!--.final de conteiner-->
+    </div>
+</footer>
+<!-- Modal Parceiro --> 
+  <div id="modal2" class="modal col s12"> 
+    <div
+  class="modal-content"> <h4>Quer ser nosso Parceiro?</h4>
+  <div class="col s12 m10">
+    <label for="nomeEmpresa">Nome ou Empresa</label>
+    <input id="nomeEmpresa" type="text">
+     
+  </div>  
+  <div class="col s12 m10">
+    <label for="emailEmpresa">Qual seu email?</label>
+    <input type="email" id="emailEmpresa" class="validate">
+  </div>
+    </div>
+   <div class="modal-footer" id="modal2"> <a href="#!" class="modal-close waves-effect
+  waves-green btn-flat white ">Concluído</a> </div> 
+   </div> <!-- Modal Parceiro -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="../js/epajs.js"></script>
+</body>
+</html>

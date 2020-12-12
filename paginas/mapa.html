@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/svg" href="../imagens/juntos.svg">
+  <title>Epa-Mapa</title>
+  <link href = "https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;800 & display=swap"rel ="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" type="text/css" href="../css/layout-mapa-epa.css"/>
+  </head>
+  <body>
+<section id="topo">
+  <header>
+    <nav>
+      <div class= "nav-wrapper">
+        <div class="row">
+          <div class="col s6 m2 l2" >
+          <a href="../index.html"><img src="../imagens/imagem-epa.png"class="logo" alt= "logo" ></a>
+          </div>
+          <div class="col s5 m7 l10 offset-m2 offset-s1" >
+          <a href="#" class="sidenav-trigger   right" id="menu" data-target="mobile-menu"><i class="material-icons">menu</i></a>    
+              <ul class="right hide-on-med-and-down menu-principal"id="base-menu">
+                <li><a  href="mapa.html">Mapa</a></li>
+                <li><a  href="perfil.html">Perfil</a></li>
+                <li><a  href="agenda.html">Agenda</a></li>
+                <li><a  href="chat.html">Meus Chats</a></li>
+                <li><a  href="meus-dados.html">Meus Dados</a></li>
+                <li><a  href="#" onclick="deslogar()">Sair</a></li>
+              </ul>
+            </div><!--.final de col-->
+          <div id="modal1" class="modal">
+            <div class="modal-content">
+              <h4 id="modal-login">login</h4>
+              <div class="col s12 m10">
+                <label id="modalp" for="email">email</label>
+                <input id="email" class="validate" type="email">
+
+              </div>
+              <div class="col s12 m10">
+
+                <label id="modalp" for="password"> senha</label>
+                <input type="password" id="password" class="validate">
+                
+              </div>
+
+              </div>
+            <div class="modal-footer col s6 m6" id="modal-btnlogar">
+              <a href="#" class="modal-close btn-large">logar</a>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </nav>
+    <ul class="sidenav" id="mobile-menu">
+        <li><a class="mapa" href="mapa.html">Mapa</a></li>
+        <li><a class="perfil" href="perfil.html">Perfil</a></li>
+        <li><a class="agenda" href="agenda.html">Agenda</a></li>
+        <li><a class="chats" href="chat.html">Meus Chats</a></li>
+        <li><a class="meusDados" href="meus-dados.html">Meus Dados</a></li>
+        <li><a href="#" class="btn waves-effect waves-light blue darken-3" onclick="deslogar()">Sair</a></li>
+      </ul>
+  </header>
+  <ul class="sidenav" id="mobile-menu"> 
+    <li><a id="login" class="modal-trigger sidenav-close btn waves-effect waves-light" href="#modal1">login</a></li>
+    
+  </ul>
+  <div class="container">
+    <div class="col s12 m12" id="titulo">
+      <h1>Mapa</h1>
+      <h7 class="white-text">Encontre os Seus professores aqui.</h7>
+    </div>
+  </div>
+</section>
+
+<section id="meio">
+   <div class="container">
+     <div id="mapa" class="z-depth-3"></div>
+  </div>
+  <!--Modal para mostrar o perfil do professor-->
+  <div class="modal" id="modalPerfil1">
+    <div class="modal-content">
+      <h5 id="perfilEncontrado">Perfil encontrado</h5>
+        <img src="../imagens/foto-perfil.jpg" class="circle" id="fotoParaMostrar" alt="foto do professor" width="75">
+        <h6 id="nomeSobrenomeProfessor"></h6>
+        <div class="z-depth-2" id="divPerfil">
+          <p id="legendaTelefone">Telefone:</p>
+          <p id="telefone"></p>
+        </div>
+       <div id="divPerfil" class="z-depth-2">
+         <p id="legendaumPoucoSobreVoce">Um pouco sobre mim</p>
+         <p id="umPoucoSobreVoce"></p>
+       </div>
+        <div id="divPerfil" class="z-depth-2">
+          <p id="legendaummateriaPreco">Matérias e preços</p>
+          <p id="materiaPreco"></p>
+        </div>
+       <div class="modal-footer" id="divBtnChatPerfil">
+         <a href="chat.html" class="btn waves-effect waves-light">Chat</a>
+       </div>
+    </div>
+  </div>
+  <div class="container" id="divFiltros">
+    <div class="col s12 m12">
+      <h4>Filtros</h4>
+    </div>
+    <div class="row">
+      <div class="input-field col s12 m3">
+    <select>
+      <option value="" disabled selected>Nenhuma</option>
+      <option value="2">Português</option>
+      <option value="1">Matemática</option>
+      <option value="História">História</option>
+      <option value="Geografia">Geografia</option>
+      <option value="Artes">Artes</option>
+      <option value="Física">Física</option>
+      <option value="Filosofia">Filosofia</option>
+      <option value="Biologia">Biologia</option>
+      <option value="Química">Química</option>
+      <option value="Sociologia">Sociologia</option>
+      <option value="Outros">Outros....</option>
+    </select>
+    <label>Escolha a matéria</label>
+      </div>
+  <div class="input-field col s12 m3">
+    <select>
+      <option value="" disabled selected>Nenhum</option>
+      <optgroup label="Ensino fundamental 1">
+      <option value="1">1º ano</option>
+      <option value="2">2º ano</option>
+      <option value="3">3º ano</option>
+      <option value="4">4º ano</option>
+      <option value="5">5º ano</option>
+      </optgroup>
+      <optgroup label="Ensino fundamental 2">
+      <option value="6">6º ano</option>
+      <option value="7">7º ano</option>
+      <option value="8">8º ano</option>
+      <option value="9">9º ano</option>
+      </optgroup>
+      <optgroup label="Ensino Médio">
+      <option value="10">1º ano</option>
+      <option value="11">2º ano</option>
+      <option value="12">3º ano</option>
+      </optgroup>
+    </select>
+    <label>Escolha o nível escolar</label>
+  </div>
+  <div class="col s9   m4" id="divBtnFiltro">
+    <a href="#meio" class="btn waves-effect waves-light">Aplicar filtro</a>
+  </div>
+    </div>
+  </div>
+ <div class="container">
+   <div class="col s12 m12" id="divBtnLocalizacao">
+     <a href="#meio" id="btnParaLocalizar"class="waves-effect waves-light mid btn blue darken-3 z-depth-3">Mostrar sua localização.</a>
+   </div>
+ </div>
+   
+</section>
+
+ <footer class="page-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col s12 m5 l6">
+        <h5 class="white-text" >Estude ou dê aulas perto de casa, receba novidades no seu email</h5>
+        <div class="input-field inline col s12 m6 l6">
+           <input id="email_inline" type="email" class="validate">
+         <label for="email_inline">digite o seu e-mail</label>
+        </div>
+      </div><!--.final de col-->
+      <div id="social" class="col s12 m7 l5 offset-l1">
+        <h5 >Nossas redes</h5>
+        <ul>
+          <li><a href="#">facebook</a></li>
+          <li><a href="#">youtube</a></li>
+          <li><a href="#">twitter</a></li>
+          <li><a href="#">google plus</a></li>
+          <li><a href="#">instagram</a></li>
+        </ul>
+      </div>
+    </div><!--.final de row-->
+    <div class="row">
+      <div class="col s6 m8">
+        <div class="parceria">
+        <a href="../paginas/perguntas-frequentes.html" class="link_final"><i class="material-icons">help</i> Perguntas frequentes </a>
+        <div><a href="../paginas/como-começar.html" class="link_final"><i class="material-icons">info</i> Como começar</a></div>
+        </div>
+      </div>
+      <div class="col s6 m3">
+        <a href="#" class="link_final"><i class="material-icons">people</i> Conheça nossos parceiros</a>
+      <div><a href="#modal2" class="link_final modal-trigger"><i class=material-icons>how_to_reg</i> Seja nosso parceiro</a></div>
+      </div>
+    </div>
+    </div>
+    </div>
+    <div class="footer-copyright">
+            <div class="container">
+            ©2020 Epa-ensino por amor
+            <a class=" teal-text text-lighten-2 right" href="#!">Equipe-52</a>
+      </div><!--.final de conteiner-->
+    </div>
+</footer>
+<!-- Modal Parceiro --> 
+  <div id="modal2" class="modal col s12"> 
+    <div
+  class="modal-content"> <h4>Quer ser nosso Parceiro?</h4>
+  <div class="col s12 m10">
+    <label for="nomeEmpresa">Nome ou Empresa</label>
+    <input id="nomeEmpresa" type="text">
+     
+  </div>  
+  <div class="col s12 m10">
+    <label for="emailEmpresa">Qual seu email?</label>
+    <input type="email" id="emailEmpresa" class="validate">
+  </div>
+    </div>
+   <div class="modal-footer" id="modal2"> <a href="#!" class="modal-close waves-effect
+  waves-green btn-flat white ">Concluído</a> </div> 
+   </div> <!-- Modal Parceiro -->
+
+    <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD-xjGEnuK7hBDolTVmQFPL8mt3D1lJ_z0&callback=initMap">
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="../js/autentificacao.js"></script>
+    <script src="../js/epajs.js"></script>
+    <script src="../js/mapa.js"></script>
+  </body>
+</html>

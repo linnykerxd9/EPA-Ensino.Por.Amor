@@ -1,0 +1,1012 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link rel="icon" type="image/svg" href="../imagens/juntos.svg">
+    <title>Chat-Epa</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href = "https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;800 & display=swap"rel ="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    
+    <link rel="stylesheet" href="../css/chat.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+   <section id="topo">
+  <header>
+    <nav>
+      <div class= "nav-wrapper">
+        <div class="row">
+          <div class="col s6 m2 l2" >
+          <a href="../index.html"><img src="../imagens/imagem-epa.png"class="logo" alt= "logo" ></a>
+          </div>
+          <div class="col s5 m7 l10 offset-m2 offset-s1" >
+          <a href="#" class="sidenav-trigger   right" id="menu" data-target="mobile-menu"><i class="material-icons">menu</i></a>    
+              <ul class="right hide-on-med-and-down menu-principal"id="base-menu">
+                <li><a  href="mapa.html">Mapa</a></li>
+                <li><a  href="perfil.html">Perfil</a></li>
+                <li><a  href="agenda.html">Agenda</a></li>
+                <li><a  href="chat.html">Meus Chats</a></li>
+                <li><a  href="meus-dados.html">Meus Dados</a></li>
+                <li><a  href="#" onclick="deslogar()">Sair</a></li>
+              </ul>
+            </div><!--.final de col-->
+          <div id="modal1" class="modal">
+            <div class="modal-content">
+              <h4 id="modal-login">login</h4>
+              <div class="col s12 m10">
+                <label id="modalp" for="email">email</label>
+                <input id="email" class="validate" type="email">
+
+              </div>
+              <div class="col s12 m10">
+
+                <label id="modalp" for="password"> senha</label>
+                <input type="password" id="password" class="validate">
+                
+              </div>
+
+              </div>
+            <div class="modal-footer col s6 m6" id="modal-btnlogar">
+              <a href="#" class="modal-close btn-large">logar</a>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </nav>
+    <ul class="sidenav" id="mobile-menu">
+        <li><a class="mapa" href="mapa.html">Mapa</a></li>
+        <li><a class="perfil" href="perfil.html">Perfil</a></li>
+        <li><a class="agenda" href="agenda.html">Agenda</a></li>
+        <li><a class="chats" href="chat.html">Meus Chats</a></li>
+        <li><a class="meusDados" href="meus-dados.html">Meus Dados</a></li>
+        <li><a href="#" class="btn waves-effect waves-light blue darken-3" onclick="deslogar()">Sair</a></li>
+      </ul>
+  </header>
+  <ul class="sidenav" id="mobile-menu"> 
+    <li><a id="login" class="modal-trigger sidenav-close btn waves-effect waves-light" href="#modal1">login</a></li>
+    
+  </ul>
+  <div class="container">
+    <div class="col s12 m12" id="titulo">
+      <h1>Seus Chats</h1>
+    </div>
+  </div>
+</section>
+<div class="container bootstrap snippets bootdey">
+    <div class="row">
+		<div class="col-md-4 bg-white ">
+            <div class="row border-bottom padding-sm" id="contatos" style="height:40px;">
+            	Contatos   
+            </div>
+<section id="meio">
+     <!-- =============================================================== -->
+            <!-- Listagem de contatos ativos -->
+            <ul class="friend-list">
+                <li id="professor">
+                    <a class="clearfix">
+                        <img src="https://bootdey.com/img/Content/user_1.jpg" alt="" class="img-circle">
+                        <div class="friend-name">   
+                            <strong>Professor Marcos</strong>
+                        </div>
+                        <div class="last-message text-muted">Ate mais, bom dia!</div>
+                        <small class="time text-muted">15 min</small>
+                        <small class="chat-alert label label-danger"><i class="fa fa-check"></i></small>
+                    </a>
+                </li>
+                <li id="amiga">
+                    <a  class="clearfix">
+                        <img src="https://bootdey.com/img/Content/user_2.jpg" alt="" class="img-circle">
+                        <div class="friend-name">   
+                            <strong>Professora Clara</strong>
+                        </div>
+                        <div class="last-message text-muted">Nops</div>
+                        <small class="time text-muted">20 min</small>
+                    <small class="chat-alert text-muted"><i class="fa fa-check"></i></small>
+                    </a>
+                </li> 
+                <li id="carlos">
+                    <a  class="clearfix">
+                        <img src="https://bootdey.com/img/Content/user_3.jpg" alt="" class="img-circle">
+                        <div class="friend-name">   
+                            <strong>Professor Carlos</strong>
+                        </div>
+                        <div class="last-message text-muted">Não entendi?</div>
+                        <small class="time text-muted">30 min</small>
+                        <small class="chat-alert text-muted"><i class="fa fa-reply"></i></small>
+                    </a>
+                </li>  
+                <li  id="adriano">
+                    <a href="#contatos" class="clearfix">
+                        <img src="https://bootdey.com/img/Content/user_1.jpg" alt="" class="img-circle">
+                        <div class="friend-name">   
+                            <strong>Professor Adriano</strong>
+                        </div>
+                        <div class="last-message text-muted">Gostei tb não visse</div>
+                        <small class="time text-muted">Ontem</small>
+                        <small class="chat-alert text-muted"><i class="fa fa-reply"></i></small>
+                    </a>
+                </li>     
+                <li  id="priscila">
+                    <a href="#contatos" class="clearfix">
+                        <img src="https://bootdey.com/img/Content/user_2.jpg" alt="" class="img-circle">
+                        <div class="friend-name">   
+                            <strong>Professora Priscila</strong>
+                        </div>
+                        <div class="last-message text-muted">Até mais professora!!</div>
+                        <small class="time text-muted">Ontem</small>
+                        <small class="chat-alert text-muted"><i class="fa fa-reply"></i></small>
+                    </a>
+                </li> 
+
+            </ul>
+        </div>
+        <!--=========================================================-->
+        <!-- Chat Selecionado -->
+    </section>
+        <div id="chatMobile" class="col-md-8 bg-white">
+            <div class="container">
+                <h3>Chat</h3>
+            </div>
+            
+        </div>
+        <div id="professorChat" class="col-md-8 bg-white ">
+            <div class="chat-message">
+                <div class="nomeConversa">
+                    <div class="row">
+                        <div class="fotoPerfilConversa">
+                            <span class="chat-img pull-left">
+                            <img src="https://bootdey.com/img/Content/user_1.jpg" alt="Avatar do usuario" class="circle">
+                        </span>
+                        </div>
+                        <div class="nomeConversa">
+
+                            <p class="primary-font"><strong >Professor Marcos</strong></p>
+                            <a href="#modalPagar" class="btn waves-light waves-effect modal-trigger">Iniciar Aula</a>
+                        </div>
+                    </div>
+                </div>
+                <ul class="chat">
+                    <li class="left clearfix">
+                        <div class="row">
+                            <span class="chat-img pull-left">
+                            <img src="https://bootdey.com/img/Content/user_1.jpg" alt="User Avatar">
+                        </span>
+                        <div class="chat-body clearfix">
+                            <div class="header">
+                                <strong class="primary-font">Professor</strong>
+                                <small class="pull-right text-muted"><i class="fa fa-clock-o"></i> 12 mins ago</small>
+                            </div>
+                            <p>
+                                Bom dia.
+                            </p>
+                        </div>
+                        </div>
+                        
+                    </li>
+                    <li class="right clearfix">
+                        <div class="row">
+                          
+                        <div class="chat-body clearfix">
+                            <div class="header">
+                                <strong class="primary-font">Simone</strong>
+                                <small class="pull-right text-muted"><i class="fa fa-clock-o"></i> 13 mins ago</small>
+                            </div>
+                            <p>
+                                Bom dia professor, fiz o meu projeto, poderia avaliar por favor?
+                            </p>
+                        </div>
+                          <span class="chat-img pull-right">
+                            <img src="https://bootdey.com/img/Content/user_2.jpg" alt="User Avatar">
+                        </span>
+                        </div>
+                        
+                    </li>
+                    <li class="left clearfix">
+                        <div class="row">
+                            <span class="chat-img pull-left">
+                            <img src="https://bootdey.com/img/Content/user_1.jpg" alt="User Avatar">
+                        </span>
+                        <div class="chat-body clearfix">
+                            <div class="header">
+                                <strong class="primary-font">Professor</strong>
+                                <small class="pull-right text-muted"><i class="fa fa-clock-o"></i> 12 mins ago</small>
+                            </div>
+                            <p>
+                                Sim, mandou para meu Email?
+                            </p>
+                        </div>
+                        </div>
+                        
+                    </li>
+                    <li class="right clearfix">
+                        <div class="row">
+                           
+                        <div class="chat-body clearfix">
+                            <div class="header">
+                                <strong class="primary-font">Simone</strong>
+                                <small class="pull-right text-muted"><i class="fa fa-clock-o"></i> 13 mins ago</small>
+                            </div>
+                            <p>
+                                Enviei para o da faculdade.
+                            </p>
+                        </div>
+                         <span class="chat-img pull-right">
+                          <img src="https://bootdey.com/img/Content/user_2.jpg" alt="User Avatar">
+                        </span>
+                        </div>
+                        
+                    </li>                    
+                    <li class="left clearfix">
+                        <div class="row">
+                            <span class="chat-img pull-left">
+                            <img src="https://bootdey.com/img/Content/user_1.jpg" alt="User Avatar">
+                        </span>
+                        <div class="chat-body clearfix">
+                            <div class="header">
+                                <strong class="primary-font">Professor</strong>
+                                <small class="pull-right text-muted"><i class="fa fa-clock-o"></i> 12 mins ago</small>
+                            </div>
+                            <p>
+                                Ok! Vou analisar e dou um retorno posteriormente.
+                            </p>
+                        </div>
+                        </div>
+                        
+                    </li>
+                    <li class="right clearfix">
+                        <div class="row">
+                        <div class="chat-body clearfix">
+                            <div class="header">
+                                <strong class="primary-font">Simone</strong>
+                                <small class="pull-right text-muted"><i class="fa fa-clock-o"></i> 13 mins ago</small>
+                            </div>
+                            <p>
+                                Ok, fico no aguardo se tiver alguma correcao 
+                            </p>
+                        </div>
+                        <span class="chat-img pull-right">
+                         <img src="https://bootdey.com/img/Content/user_2.jpg" alt="User Avatar">
+                        </span>
+                        </div>
+                        
+                    </li>
+                    <li class="right clearfix">
+                        <div class="row">
+                            
+                        <div class="chat-body clearfix">
+                            <div class="header">
+                                <strong class="primary-font">Simone</strong>
+                                <small class="pull-right text-muted"><i class="fa fa-clock-o"></i> 13 mins ago</small>
+                            </div>
+                            <p>
+                                Ate mais, bom dia! 
+                            </p>
+                        </div> 
+                        <span class="chat-img pull-right">
+                         <img src="https://bootdey.com/img/Content/user_2.jpg" alt="User Avatar">
+                        </span>
+                        </div>
+                       
+                    </li>                    
+                </ul>
+            </div>
+            <div class="chat-box bg-white">
+                <div class="input-group">
+                    <input class="form-control border no-shadow no-rounded" placeholder="Escreva sua mensagem aqui">
+                    <span class="input-group-btn">
+                        <button class="btn btn-success no-rounded" type="button">enviar</button>
+                    </span>
+                </div><!-- /input-group --> 
+            </div>            
+        </div>   
+        <div id="amigaChat" class="col-md-8 bg-white ">
+            <div class="chat-message">
+                                <div class="nomeConversa">
+                    <div class="row">
+                        <div class="fotoPerfilConversa">
+                            <span class="chat-img pull-left">
+                            <img src="https://bootdey.com/img/Content/user_2.jpg" alt="Avatar do usuario" class="circle">
+                        </span>
+                        </div>
+                        <div class="nomeConversa">
+
+                            <p class="primary-font"><strong >Professora Clara</strong></p>
+                            <a href="#modalPagar" class="btn waves-light waves-effect modal-trigger">Iniciar Aula</a>
+                        </div>
+                    </div>
+                </div>
+
+                <ul class="chat">
+                    <li class="left clearfix">
+                        <div class="row">
+                            <span class="chat-img pull-left">
+                            <img src="https://bootdey.com/img/Content/user_2.jpg" alt="User Avatar">
+                        </span>
+                        <div class="chat-body clearfix">
+                            <div class="header">
+                                <strong class="primary-font">Professora</strong>
+                                <small class="pull-right text-muted"><i class="fa fa-clock-o"></i> 12 mins ago</small>
+                            </div>
+                            <p>
+                                Bom dia.
+                            </p>
+                        </div>
+                        </div>
+                        
+                    </li>
+                    <li class="right clearfix">
+                        <div class="row">
+                           
+                        <div class="chat-body clearfix">
+                            <div class="header">
+                                <strong class="primary-font">Simone</strong>
+                                <small class="pull-right text-muted"><i class="fa fa-clock-o"></i> 13 mins ago</small>
+                            </div>
+                            <p>
+                                Bom dia professor, fiz o meu projeto, poderia avaliar por favor?
+                            </p>
+                        </div>
+                         <span class="chat-img pull-right">
+                            <img src="https://bootdey.com/img/Content/user_2.jpg" alt="User Avatar">
+                        </span>
+                        </div>
+                        
+                    </li>
+                    <li class="left clearfix">
+                        <div class="row">
+                            <span class="chat-img pull-left">
+                            <img src="https://bootdey.com/img/Content/user_2.jpg" alt="User Avatar">
+                        </span>
+                        <div class="chat-body clearfix">
+                            <div class="header">
+                                <strong class="primary-font">Professora</strong>
+                                <small class="pull-right text-muted"><i class="fa fa-clock-o"></i> 12 mins ago</small>
+                            </div>
+                            <p>
+                                Sim, mandou para meu Email?
+                            </p>
+                        </div>
+                        </div>
+                        
+                    </li>
+                    <li class="right clearfix">
+                        <div class="row">
+                           
+                        <div class="chat-body clearfix">
+                            <div class="header">
+                                <strong class="primary-font">Simone</strong>
+                                <small class="pull-right text-muted"><i class="fa fa-clock-o"></i> 13 mins ago</small>
+                            </div>
+                            <p>Enviei para o da faculdade.</p>
+                        </div>
+                        <span class="chat-img pull-right">
+                          <img src="https://bootdey.com/img/Content/user_2.jpg" alt="User Avatar">
+                        </span>
+                        </div>
+                           </li>           
+                    <li class="left clearfix">
+                        <div class="row">
+                            <span class="chat-img pull-left">
+                            <img src="https://bootdey.com/img/Content/user_2.jpg" alt="User Avatar">
+                        </span>
+                        <div class="chat-body clearfix">
+                            <div class="header">
+                                <strong class="primary-font">Professora</strong>
+                                <small class="pull-right text-muted"><i class="fa fa-clock-o"></i> 12 mins ago</small>
+                            </div>
+                            <p>
+                                Ok! Vou analisar e dou um retorno posteriormente.
+                            </p>
+                        </div>
+                        </div>
+                        
+                    </li>
+                    <li class="right clearfix">
+                        <div class="row">
+                        <div class="chat-body clearfix">
+                            <div class="header">
+                                <strong class="primary-font">Simone</strong>
+                                <small class="pull-right text-muted"><i class="fa fa-clock-o"></i> 13 mins ago</small>
+                            </div>
+                            <p>
+                                Ok, fico no aguardo se tiver alguma correcao 
+                            </p>
+                        </div>
+                         <span class="chat-img pull-right">
+                          <img src="https://bootdey.com/img/Content/user_2.jpg" alt="User Avatar">
+                        </span>
+                        </div>
+                    </li>
+                    <li class="right clearfix">
+                        <div class="row">
+                        <div class="chat-body clearfix">
+                            <div class="header">
+                                <strong class="primary-font">Simone</strong>
+                                <small class="pull-right text-muted"><i class="fa fa-clock-o"></i> 13 mins ago</small>
+                            </div>
+                            <p>
+                                Ate mais, bom dia! 
+                            </p>
+                        </div>
+                        <span class="chat-img pull-right">
+                          <img src="https://bootdey.com/img/Content/user_2.jpg" alt="User Avatar">
+                          </span>
+                        </div>
+                    </li>                    
+                </ul>
+            </div>
+            <div class="chat-box bg-white">
+                <div class="input-group">
+                    <input class="form-control border no-shadow no-rounded" placeholder="Escreva sua mensagem aqui">
+                    <span class="input-group-btn">
+                        <button class="btn btn-success no-rounded" type="button">Enviar</button>
+                    </span>
+                </div><!-- /input-group --> 
+            </div>            
+        </div>  
+        <div id="carlosChat" class="col-md-8 bg-white ">
+            <div class="chat-message">
+                                <div class="nomeConversa">
+                    <div class="row">
+                        <div class="fotoPerfilConversa">
+                            <span class="chat-img pull-left">
+                            <img src="https://bootdey.com/img/Content/user_3.jpg" alt="Avatar do usuario" class="circle">
+                        </span>
+                        </div>
+                        <div class="nomeConversa">
+
+                            <p class="primary-font"><strong >Professor Carlos</strong></p>
+                            <a href="#modalPagar" class="btn waves-light waves-effect modal-trigger">Iniciar Aula</a>
+                        </div>
+                    </div>
+                </div>
+
+                <ul class="chat">
+                    <li class="left clearfix">
+                        <div class="row">
+                            <span class="chat-img pull-left">
+                            <img src="https://bootdey.com/img/Content/user_3.jpg" alt="User Avatar">
+                        </span>
+                        <div class="chat-body clearfix">
+                            <div class="header">
+                                <strong class="primary-font">Carlos</strong>
+                                <small class="pull-right text-muted"><i class="fa fa-clock-o"></i> 12 mins ago</small>
+                            </div>
+                            <p>
+                                Bom dia.
+                            </p>
+                        </div>
+                        </div>
+                        
+                    </li>
+                    <li class="right clearfix">
+                        <div class="row">
+                            
+                        <div class="chat-body clearfix">
+                            <div class="header">
+                                <strong class="primary-font">Simone</strong>
+                                <small class="pull-right text-muted"><i class="fa fa-clock-o"></i> 13 mins ago</small>
+                            </div>
+                            <p>
+                                Bom dia professor, fiz o meu projeto, poderia avaliar por favor?
+                            </p>
+                        </div>
+                        <span class="chat-img pull-right">
+                          <img src="https://bootdey.com/img/Content/user_2.jpg" alt="User Avatar">
+                        </span>
+                        </div>
+                        
+                    </li>
+                    <li class="left clearfix">
+                        <div class="row">
+                        <span class="chat-img pull-left">
+                         <img src="https://bootdey.com/img/Content/user_3.jpg" alt="User Avatar">
+                        </span>
+                        <div class="chat-body clearfix">
+                            <div class="header">
+                                <strong class="primary-font">Carlos</strong>
+                                <small class="pull-right text-muted"><i class="fa fa-clock-o"></i> 12 mins ago</small>
+                            </div>
+                            <p>
+                                Sim, mandou para meu Email?
+                            </p>
+                        </div>
+                        </div>
+                    </li>
+                    <li class="right clearfix">
+                        <div class="row">
+                        <div class="chat-body clearfix">
+                            <div class="header">
+                                <strong class="primary-font">Simone</strong>
+                                <small class="pull-right text-muted"><i class="fa fa-clock-o"></i> 13 mins ago</small>
+                            </div>
+                            <p>
+                                Enviei para o da faculdade.
+                            </p>
+                        </div>
+                        <span class="chat-img pull-right">
+                          <img src="https://bootdey.com/img/Content/user_2.jpg" alt="User Avatar">
+                        </span>
+                        </div>
+                        
+                    </li>                    
+                    <li class="left clearfix">
+                        <div class="row">
+                            <span class="chat-img pull-left">
+                            <img src="https://bootdey.com/img/Content/user_3.jpg" alt="User Avatar">
+                        </span>
+                        <div class="chat-body clearfix">
+                            <div class="header">
+                                <strong class="primary-font">Carlos</strong>
+                                <small class="pull-right text-muted"><i class="fa fa-clock-o"></i> 12 mins ago</small>
+                            </div>
+                            <p>
+                                Ok! Vou analisar e dou um retorno posteriormente.
+                            </p>
+                        </div>
+                        </div>
+                        
+                    </li>
+                    <li class="right clearfix">
+                        <div class="row">
+                             
+                        <div class="chat-body clearfix">
+                            <div class="header">
+                                <strong class="primary-font">Simone</strong>
+                                <small class="pull-right text-muted"><i class="fa fa-clock-o"></i> 13 mins ago</small>
+                            </div>
+                            <p>
+                                Ok, fico no aguardo se tiver alguma correcao 
+                            </p>
+                        </div>
+                        <span class="chat-img pull-right">
+                            <img src="https://bootdey.com/img/Content/user_2.jpg" alt="User Avatar">
+                        </span>
+                        </div>
+                       
+                    </li>
+                    <li class="right clearfix">
+                        <div class="row">
+                            
+                        <div class="chat-body clearfix">
+                            <div class="header">
+                                <strong class="primary-font">Simone</strong>
+                                <small class="pull-right text-muted"><i class="fa fa-clock-o"></i> 13 mins ago</small>
+                            </div>
+                            <p>
+                                Ate mais, bom dia! 
+                            </p>
+                        </div>
+                        <span class="chat-img pull-right">
+                         <img src="https://bootdey.com/img/Content/user_2.jpg" alt="User Avatar">
+                        </span>
+                        </div>
+                        
+                    </li>                    
+                </ul>
+            </div>
+            <div class="chat-box bg-white"> 
+                <div class="input-group">
+                    <input class="form-control border no-shadow no-rounded" placeholder="Escreva sua mensagem aqui">
+                    <span class="input-group-btn">
+                        <button class="btn btn-success no-rounded" type="button">enviar</button>
+                    </span>
+                </div><!-- /input-group --> 
+            </div>            
+        </div> 
+        <div id="adrianoChat" class="col-md-8 bg-white ">
+            <div class="chat-message">
+                                <div class="nomeConversa">
+                    <div class="row">
+                        <div class="fotoPerfilConversa">
+                            <span class="chat-img pull-left">
+                            <img src="https://bootdey.com/img/Content/user_1.jpg" alt="Avatar do usuario" class="circle">
+                        </span>
+                        </div>
+                        <div class="nomeConversa">
+
+                            <p class="primary-font"><strong >Professor Adriano</strong></p>
+                            <a href="#modalPagar" class="btn waves-light waves-effect modal-trigger">Iniciar Aula</a>
+                        </div>
+                    </div>
+                </div>
+
+                <ul class="chat">
+                    <li class="left clearfix">
+                        <div class="row">
+                            <span class="chat-img pull-left">
+                            <img src="https://bootdey.com/img/Content/user_1.jpg" alt="User Avatar">
+                        </span>
+                        <div class="chat-body clearfix">
+                                 <div class="header">
+                                <strong class="primary-font">Professor</strong>
+                                <small class="pull-right text-muted"><i class="fa fa-clock-o"></i> 12 mins ago</small>
+                            </div>
+                            <p>
+                                Bom dia.
+                            </p>
+                            </div>
+                        </div>
+                        
+                           
+                    </li>
+                    <li class="right clearfix">
+                        <div class="row">
+                           
+                        <div class="chat-body clearfix">
+                            <div class="header">
+                                <strong class="primary-font">Simone</strong>
+                                <small class="pull-right text-muted"><i class="fa fa-clock-o"></i> 13 mins ago</small>
+                            </div>
+                            <p>
+                                Bom dia professor, fiz o meu projeto, poderia avaliar por favor?
+                            </p>
+                        </div>
+                         <span class="chat-img pull-right">
+                          <img src="https://bootdey.com/img/Content/user_2.jpg" alt="User Avatar">
+                        </span>
+                        </div>
+                        
+                    </li>
+                    <li class="left clearfix">
+                        <div class="row">
+                        <span class="chat-img pull-left">
+                          <img src="https://bootdey.com/img/Content/user_1.jpg" alt="User Avatar">
+                        </span>
+                        <div class="chat-body clearfix">
+                            <div class="header">
+                                <strong class="primary-font">Professor</strong>
+                                <small class="pull-right text-muted"><i class="fa fa-clock-o"></i> 12 mins ago</small>
+                            </div>
+                            <p>
+                                Sim, mandou para meu Email?
+                            </p>
+                        </div>
+                        </div>
+                    </li>
+                    <li class="right clearfix">
+                        <div class="row">
+                           
+                        <div class="chat-body clearfix">
+                            <div class="header">
+                                <strong class="primary-font">Simone</strong>
+                                <small class="pull-right text-muted"><i class="fa fa-clock-o"></i> 13 mins ago</small>
+                            </div>
+                            <p>
+                                Enviei para o da faculdade.
+                            </p>
+                        </div> 
+                        <span class="chat-img pull-right">
+                          <img src="https://bootdey.com/img/Content/user_2.jpg" alt="User Avatar">
+                        </span>
+                        </div>
+                    </li>                    
+                    <li class="left clearfix">
+                        <div class="row">
+                            <span class="chat-img pull-left">
+                            <img src="https://bootdey.com/img/Content/user_1.jpg" alt="User Avatar">
+                        </span>
+                        <div class="chat-body clearfix">
+                            <div class="header">
+                                <strong class="primary-font">Professor</strong>
+                                <small class="pull-right text-muted"><i class="fa fa-clock-o"></i> 12 mins ago</small>
+                            </div>
+                            <p>
+                                Ok! Vou analisar e dou um retorno posteriormente.
+                            </p>
+                        </div>
+                        </div>
+                        
+                    </li>
+                    <li class="right clearfix">
+                        <div class="row">
+                           
+                        <div class="chat-body clearfix">
+                            <div class="header">
+                                <strong class="primary-font">Simone</strong>
+                                <small class="pull-right text-muted"><i class="fa fa-clock-o"></i> 13 mins ago</small>
+                            </div>
+                            <p>
+                                Ok, fico no aguardo se tiver alguma correcao 
+                            </p>
+                        </div>
+                         <span class="chat-img pull-right">
+                          <img src="https://bootdey.com/img/Content/user_2.jpg" alt="User Avatar">
+                        </span>
+                        </div>
+                        
+                    </li>
+                    <li class="right clearfix">
+                        <div class="row">
+                            
+                        <div class="chat-body clearfix">
+                            <div class="header">
+                                <strong class="primary-font">Simone</strong>
+                                <small class="pull-right text-muted"><i class="fa fa-clock-o"></i> 13 mins ago</small>
+                            </div>
+                            <p>
+                                Ate mais, bom dia! 
+                            </p>
+                        </div>
+                         <span class="chat-img pull-right">
+                          <img src="https://bootdey.com/img/Content/user_2.jpg" alt="User Avatar">
+                        </span>
+                        </div>
+                       
+                    </li>                    
+                </ul>
+            </div>
+            <div class="chat-box bg-white">
+                <div class="input-group">
+                    <input class="form-control border no-shadow no-rounded" placeholder="Escreva sua mensagem aqui">
+                    <span class="input-group-btn">
+                        <button class="btn btn-success no-rounded" type="button">enviar</button>
+                    </span>
+                </div><!-- /input-group --> 
+            </div>            
+        </div> 
+        <div id="priscilaChat" class="col-md-8 bg-white ">
+            <div class="chat-message">
+              <div class="nomeConversa">
+                    <div class="row">
+                        <div class="fotoPerfilConversa">
+                            <span class="chat-img pull-left">
+                            <img src="https://bootdey.com/img/Content/user_2.jpg" alt="Avatar do usuario" class="circle">
+                        </span>
+                        </div>
+                        <div class="nomeConversa">
+
+                            <p class="primary-font"><strong >Professora Priscila</strong></p>
+                            <a href="#modalPagar" class="btn waves-light waves-effect modal-trigger">Iniciar Aula</a>
+                        </div>
+                    </div>
+                </div>
+
+                    </div>
+                <ul class="chat">
+                    <li class="left clearfix">
+                        <div class="row">
+                             <span class="chat-img pull-left">
+                            <img src="https://bootdey.com/img/Content/user_2.jpg" alt="User Avatar">
+                        </span>
+                        <div class="chat-body clearfix">
+                            <div class="header">
+                                <strong class="primary-font">Professora</strong>
+                                <small class="pull-right text-muted"><i class="fa fa-clock-o"></i> 12 mins ago</small>
+                            </div>
+                            <p>
+                                Bom dia.
+                            </p>
+                        </div>
+                        </div>
+                       
+                    </li>
+                    <li class="right clearfix">
+                        <div class="row">
+                            
+                        <div class="chat-body clearfix">
+                            <div class="header">
+                                <strong class="primary-font">Simone</strong>
+                                <small class="pull-right text-muted"><i class="fa fa-clock-o"></i> 13 mins ago</small>
+                            </div>
+                            <p>
+                                Bom dia professor, fiz o meu projeto, poderia avaliar por favor?
+                            </p>
+                        </div>
+                         <span class="chat-img pull-right">
+                          <img src="https://bootdey.com/img/Content/user_2.jpg" alt="User Avatar">
+                        </span>
+                        </div>
+                       
+                    </li>
+                    <li class="left clearfix">
+                        <div class="row">
+                            <span class="chat-img pull-left">
+                            <img src="https://bootdey.com/img/Content/user_2.jpg" alt="User Avatar">
+                        </span>
+                        <div class="chat-body clearfix">
+                            <div class="header">
+                                <strong class="primary-font">Professora</strong>
+                                <small class="pull-right text-muted"><i class="fa fa-clock-o"></i> 12 mins ago</small>
+                            </div>
+                            <p>
+                                Sim, mandou para meu Email?
+                            </p>
+                        </div>
+                        </div>
+                        
+                    </li>
+                    <li class="right clearfix">
+                        <div class="row">
+                           
+                        <div class="chat-body clearfix">
+                            <div class="header">
+                                <strong class="primary-font">Simone</strong>
+                                <small class="pull-right text-muted"><i class="fa fa-clock-o"></i> 13 mins ago</small>
+                            </div>
+                            <p>
+                                Enviei para o da faculdade.
+                            </p>
+                        </div>
+                         <span class="chat-img pull-right">
+                          <img src="https://bootdey.com/img/Content/user_2.jpg" alt="User Avatar">
+                        </span>
+                        </div>
+                        
+                    </li>                    
+                    <li class="left clearfix">
+                        <div class="row">
+                            <span class="chat-img pull-left">
+                            <img src="https://bootdey.com/img/Content/user_2.jpg" alt="User Avatar">
+                        </span>
+                        <div class="chat-body clearfix">
+                            <div class="header">
+                                <strong class="primary-font">Professora</strong>
+                                <small class="pull-right text-muted"><i class="fa fa-clock-o"></i> 12 mins ago</small>
+                            </div>
+                            <p>
+                                Ok! Vou analisar e dou um retorno posteriormente.
+                            </p>
+                        </div>
+                        </div>
+                        
+                    </li>
+                    <li class="right clearfix">
+                        <div class="row">
+                            
+                        <div class="chat-body clearfix">
+                            <div class="header">
+                                <strong class="primary-font">Simone</strong>
+                                <small class="pull-right text-muted"><i class="fa fa-clock-o"></i> 13 mins ago</small>
+                            </div>
+                            <p>
+                                Ok, fico no aguardo se tiver alguma correcao 
+                            </p>
+                        </div> 
+                        <span class="chat-img pull-right">
+                            <img src="https://bootdey.com/img/Content/user_2.jpg" alt="User Avatar">
+                        </span>
+                        </div>
+                       
+                    </li>
+                    <li class="right clearfix">
+                        <div class="row">
+                           
+                        <div class="chat-body clearfix">
+                            <div class="header">
+                                <strong class="primary-font">Simone</strong>
+                                <small class="pull-right text-muted"><i class="fa fa-clock-o"></i> 13 mins ago</small>
+                            </div>
+                            <p>
+                                Ate mais, bom dia! 
+                            </p>
+                        </div>
+                         <span class="chat-img pull-right">
+                          <img src="https://bootdey.com/img/Content/user_2.jpg" alt="User Avatar">
+                        </span>
+                        </div>
+                    </li>                    
+                </ul>
+            <div class="chat-box bg-white">
+                <div class="input-group">
+                    <input class="form-control border no-shadow no-rounded" placeholder="Escreva sua mensagem aqui">
+                    <span class="input-group-btn">
+                        <button class="btn btn-success no-rounded" type="button">enviar</button>
+                    </span>
+                </div><!-- /input-group --> 
+            </div>            
+        </div> 
+    </div>
+        <div class="divModalPagamento">
+         <div class="modal" id="modalPagar">
+                <div class="modal-content">
+                    <div class="row">
+                    <div class="col s12 m10" id="divTitularCartaoChat">
+                        <label>Titular do Cartão</label>
+                        <input type="text" class="inputs " disabled id="titularCartaoMeusDados">
+                    </div>
+                    
+                    <div class="col s5 m5">
+
+                        <label>Bandeira do Cartão</label>       
+                 <select id="bandeiraCartaoMeusDados" disabled>
+                     <option value="">Selecione</option>
+                     <option value="1">Visa</option>
+                      <option value="2">Mastercard </option>
+                     <option value="3">Elo</option>
+                    </select>
+                 </div>
+                 <div class="col s4 m5">
+                 <label>Código de Segurança</label>
+                  <input disabled type="text" id="codigoSegurancaMeusDados">
+                </div>
+                    </div>
+                <div class="col s4 m5" id="divDataValidade">
+                        <label>Data de Validade</label>
+                        <input disabled type="date" id="dataValidadeMeusDados">
+                </div>
+                <h5>Total: R$ 50.00 Reais</h5>
+                <div class="divBtnPagar">
+                    <a href="#" class="btn-large waves-effect waves-light">Pagar</a>
+                </div>
+                        </div>
+        </div>
+    </div>
+</div>
+</section>
+<footer class="page-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col s12 m5 l6">
+                <h5 class="white-text" >Estude ou dê aulas perto de casa, receba novidades no seu email</h5>
+                <div class="input-field inline col s12 m6 l6">
+                     <input id="email_inline" type="email" class="validate">
+                 <label for="email_inline">digite o seu e-mail</label>
+                </div>
+            </div><!--.final de col-->
+
+            <div id="social" class="col s12 m7 l5 offset-l1">
+                <h5 >Nossas redes</h5>
+                <ul>
+                    <li><a href="#">facebook</a></li>
+                    <li><a href="#">youtube</a></li>
+                    <li><a href="#">twitter</a></li>
+                    <li><a href="#">google plus</a></li>
+                    <li><a href="#">instagram</a></li>
+                </ul>
+            </div>
+        </div><!--.final de row-->
+        <div class="row">
+            <div class="col s6 m8">
+                <div class="parceria">
+                <a href="perguntas-frequentes.html" class="link_final"><i class="material-icons">help</i> Perguntas frequentes </a>
+                <div><a href="como-começar.html" class="link_final"><i class="material-icons">info</i> Como começar</a></div>
+                </div>
+            </div>
+            <div class="col s6 m3">
+                <a href="#" class="link_final"><i class="material-icons">people</i> Conheça nossos parceiros</a>
+            <div><a href="#modal2" class="link_final modal-trigger"><i class=material-icons>how_to_reg</i> Seja nosso parceiro</a></div>
+            </div>
+        </div>
+        </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+            ©2020 Epa-ensino por amor
+            <a class=" teal-text text-lighten-2 right" href="#!">Equipe-52</a>
+        </div>
+    </div>
+</footer>
+
+    </div><!--.final de conteiner-->
+  <!-- Modal Parceiro --> 
+    <div id="modal2" class="modal col s12"> 
+        <div
+    class="modal-content"> <h4>Quer ser nosso Parceiro?</h4>
+    <div class="col s12 m10">
+        <label for="nomeEmpresa">Nome ou Empresa</label>
+        <input id="nomeEmpresa" type="text">
+         
+    </div>  
+    <div class="col s12 m10">
+        <label for="emailEmpresa">Qual seu email?</label>
+        <input type="email" id="emailEmpresa" class="validate">
+    </div>
+        </div>
+     <div class="modal-footer" id="modal2"> <a href="#!" class="modal-close waves-effect
+    waves-green btn-flat white ">Concluído</a> </div> 
+     </div> <!-- Modal Parceiro -->
+
+    <script src="../js/autentificacao.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="../js/chat.js"></script>
+    <script src="../js/epajs.js"></script>
+    <script src="../js/pagamento.js"></script>
+</body>
+</html>
