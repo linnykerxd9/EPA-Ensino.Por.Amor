@@ -1,6 +1,6 @@
 # EPA-Ensino Por Amor :man_teacher:
 
-Seja bem vindo ao GitHub do nosso projeto da faculdade
+Seja bem vindo ao GitHub do nosso projeto da faculdade.
 
 
 
