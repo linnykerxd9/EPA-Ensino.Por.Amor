@@ -1,0 +1,195 @@
+/*comentario css geral*/
+body{
+	font-family: "Open Sans";
+}
+/*comentario css section topo*/
+section#topo nav{
+background-color: rgba(13,71,161);
+padding: 1em;
+height: 6.2em;
+}	
+ section#topo div ul li a#login{
+ 	font-size: 20px;
+ 	margin-left: 200px;
+   text-transform: uppercase;
+   margin-top: 0px;
+ }
+.logo{
+	width: 150px;
+	position: absolute;top: -10px; left: -10px;
+}
+section#topo{
+	background-color:rgba(13,71,161);
+	padding-bottom: 50px;
+}
+h2{
+   margin-top: 70px;
+   margin-bottom: 0px;
+   color:white;
+   font-weight: 300;
+   text-transform: uppercase;
+   font-size: 40px;
+}
+p#aprender{
+	margin-top: 0px;
+	color: #e0e0e0;
+   font-weight: 300;
+	font-size: 30px;
+}
+/*comentario css section do meio*/
+h4{font-size: 50px;}
+section#meio p{
+   font-size: 15px; 
+   color: #616161;
+}
+section#meio div.row{
+   padding-top: 90px;
+   padding-bottom: 20px;
+   margin-bottom: 0px;
+}
+section#meio img{
+   border: 5px solid black;
+}
+section#meio{
+   background: #e0e0e0 ;
+}
+.foto-2-saiba{
+   margin-left: 390px;
+}
+#caso-tenha-duvidas{
+   margin-top: 50px;
+}
+/*css do footer*/
+footer.page-footer{
+   background-color: rgb(13,71,161);
+}
+#email_inline{
+   width: 300px;
+}
+div#social{
+   padding-top: 20px;
+}
+div#social ul li{
+   height: 32px; width: 32px;
+   margin-right: 13px;
+   float: left;
+         }
+div#social ul li a{
+   background-image: url('../imagens/sprite-social.png');display: block;height:100%;
+   color: #ffff;
+   text-indent: -99999em;
+}
+div#social ul li:nth-child(1) a{background-position: 0 0 }
+div#social ul li:nth-child(2) a{background-position: -32px 0 }
+div#social ul li:nth-child(3) a{background-position: -64px 0 }
+div#social ul li:nth-child(4) a{background-position: -96px 0 }
+div#social ul li:nth-child(5) a{background-position: -128px 0 }
+
+div#social ul li:nth-child(1) a:hover{background-position: 0 -32px}
+div#social ul li:nth-child(2) a:hover{background-position: -32px -32px }
+div#social ul li:nth-child(3) a:hover{background-position: -64px -32px }
+div#social ul li:nth-child(4) a:hover{background-position: -96px 32px}
+div#social ul li:nth-child(5) a:hover{background-position: -128px -32px}
+.link_final{
+   color:white;
+   font-weight: 800;
+}
+ #modal1{
+   padding-top: 20px;
+   padding-bottom: 40px;
+}
+#modal-login{
+	padding-left: 300px;
+	color: black;
+	font-weight: 300;
+}
+#modal-btnlogar{
+	padding-left: 280px!important;
+	padding-top: 20px;
+
+}
+#modalp{
+	font-size: 22px;
+
+}
+div#modal2 h4{
+      margin-left:50px;
+      margin-bottom:50px; 
+   } 
+div#modal2 label{
+   font-size:19px;
+   margin-top:10px!important;
+   margin-left:90px;
+   color:white;
+} 
+div#modal2 input{
+   width: 500px;
+   margin-left: 30px;
+   margin-top: 5px;
+   margin-left:110px; 
+}
+div#modal2{
+   background-color:  rgb(13,71,161); color:white;
+}
+
+/*Media querys*/
+@media screen and (max-width: 1024px) {
+   #foto-pag-principal{width: 450px}
+   #foto-cadastro{width: 450px;}
+   #perfil-foto-como-comecar{width: 450px;height: 300px;}
+   #foto-perguntas1,#foto-perguntas2{width: 300px;margin-left: 0px;}
+   #foto-perguntas1{height: 120px; margin-top: 60px;}
+   #foto-do-mapa{width: 450px; height: 250px;}
+   div#modal2 input{width: 350px}
+}
+
+@media screen and (max-width: 768px) {
+   #menu{margin-left: 250px;}
+   #foto-pag-principal{width: 350px;margin-top: 100px;}
+   #foto-cadastro{width: 350px;margin-top: 31px;}
+   #perfil-foto-como-comecar{width: 350px;}
+   #foto-perguntas1,#foto-perguntas2{width: 300px;margin-left: 0px;}
+   #foto-perguntas1{height: 100px; margin-top: 60px;}
+    #foto-do-mapa{width: 300px; height: 250px;}
+   h4{font-size: 40px;}
+}
+@media screen and (max-width: 375px) {
+   #foto-pag-principal{
+      width:300px ;margin-top: 0px;
+   }
+   #foto-cadastro{
+   width: 300px;
+   height: 300px;
+}
+   #perfil-foto-como-comecar{
+   width:300px;
+   height: 250px;
+}
+   #login{
+      font-size: 30px;
+      margin-top: 20px;
+       text-transform: uppercase;   
+}
+   #menu{margin-left: 30px;}
+   #foto-perguntas1,#foto-perguntas2{
+   width: 300px;
+   height: 200px;
+   margin-left: 0px;
+}
+   #modal-login, #modal-btnlogar{
+   padding-left: 90px!important;
+}
+   section#meio div.row{padding-top:20px;}
+   div#modal2 input,div#modal2 label{
+      margin: 0px;
+      width:250px;
+   }
+   div#modal2 h4{
+      margin-left: 0px;
+   }
+   #foto-do-mapa{
+      width: 300px;
+      height: 250px;
+   }
+}
+

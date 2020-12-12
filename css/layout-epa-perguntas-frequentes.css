@@ -1,0 +1,141 @@
+/*Css geral*/
+body{background-color:#e0e0e0;
+	font-family: "Open Sans";}
+
+/*Css da section do topo*/
+.logo{
+	width:200px;
+	position: absolute	;
+	top: -10px;
+	left: -10px;
+}
+section#topo nav{
+  background-color: rgb(13,71,161);
+  padding: 1em;
+  height: 6.2em;	
+}
+section#topo{
+  background-color: rgb(13,71,161);
+  padding-bottom: 50px;
+  color: white;
+}
+#login{font-size: 20px;margin-right: 20px;}
+
+/*css dos Modais*/
+#modal-login{
+	padding-left: 300px;
+	color: black;
+	font-weight: 300;
+}
+#modal-btnLogar{
+	padding-left: 280px!important;
+	padding-top: 20px;
+}
+#modalp{
+	font-size: 19px;
+}
+
+#modal1{
+	padding-top: 20px;
+	padding-bottom: 40px;
+}
+div#modal2 h4{
+		margin-left:50px;
+		margin-bottom:50px; 
+	} 
+div#modal2 label{
+	font-size:19px;
+	margin-top:10px!important;
+	margin-left:90px;
+	color:white;
+} 
+div#modal2 input{
+	width: 500px;
+	margin-left: 30px;
+	margin-top: 5px;
+	margin-left:110px; 
+}
+div#modal2{
+	background-color:  rgb(13,71,161); color:white;
+}
+
+/*CSS da section conteudo*/
+div.collapsible-header{
+font-family: roboto;
+color: black;
+font-weight:bolder;
+text-decoration:none !important;
+}
+.collapsible-header:hover {
+text-shadow: 0 0 3px gray;
+}
+div.collapsible-body{
+  color: white;
+}
+section#conteudo {
+  background-color: lightgray;
+  width: 100%;
+  padding: 5%;       
+  }
+
+/* css do footer*/
+
+footer.page-footer{
+	background-color:rgb(13,71,161);
+}
+#email_inline{
+	width: 300px;
+
+}
+div#social{padding-top: 20px}
+div#social ul li{
+	
+	width: 32px	;
+	height: 32px;
+	margin-right:13px ;
+	float: left;
+}
+div#social ul li a{
+	background-image: 	url('../imagens/sprite-social.png	');
+	display: 	block;
+	height: 	100%;
+	text-indent: 	-99999em;
+	color: #ffff;
+}
+div#social ul li:nth-child(1) a{background-position:0 0}
+div#social ul li:nth-child(2) a{background-position:-32px 0}
+div#social ul li:nth-child(3) a{background-position:-64px 0}
+div#social ul li:nth-child(4) a{background-position:-96px 0}
+div#social ul li:nth-child(5) a{background-position: -128px 0}
+
+div#social ul li:nth-child(1) a:hover{background-position:0  -32px}
+div#social ul li:nth-child(2) a:hover{background-position:-32px -32px}
+div#social ul li:nth-child(3) a:hover{background-position:-64px  -32px}
+div#social ul li:nth-child(4) a:hover{background-position:-96px  -32px}
+div#social ul li:nth-child(5) a:hover{background-position: -128px  -32px}
+.link_final {	
+		color:white;
+		font-weight: 800;
+	
+	}
+	@media screen and (max-width: 1024px) {
+		div#modal2 input{width: 350px}
+	}
+@media screen and (max-width: 375px) {
+	div#modal2 input,div#modal2 label{
+		margin: 0px;
+		width:250px;
+	}
+	div#modal2 h4{
+		margin-left: 0px;
+	}
+}
+
+
+
+
+  
+
+
+
+  

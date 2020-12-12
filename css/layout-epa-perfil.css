@@ -1,0 +1,219 @@
+/*Geral*/
+body{font-family:"Open Sans";}
+
+/*Section topo*/
+.logo{
+	width:200px;
+	position: absolute	;
+	top: -30px;
+	left: -10px;
+}
+
+.menu-principal {
+border-radius: 10px;
+background-image: linear-gradient(to bottom,#1565c0, rgb(13,71,161));
+text-shadow:0px 2px 0px black;
+}
+section#topo header nav div ul li a{
+	font-size: 18px;
+	text-transform: uppercase;
+	font-weight: 300;
+	letter-spacing: 1px;
+	padding-left: 30px;
+}
+section#topo header nav div ul li{border-left:  1px solid #0d47a1;	}
+ul#mobile-menu li a{
+	font-size: 20px;
+	margin: 30px;
+	font-weight: 300;
+	text-transform: uppercase; 
+}
+ul#mobile-menu li a.btn{
+	width: 150px;
+	margin-left: 50px;
+}
+ul#mobile-menu li a.inicio,ul#mobile-menu li a.perfil{margin-left: 60px;}
+ul#mobile-menu li a.agenda{margin-left: 50px;}
+ul#mobile-menu li a.mapa{margin-left: 65px;}
+
+h2{
+	font-size: 50px;
+	color: white;
+	font-weight: 300;
+	padding-left: 580px;
+	letter-spacing: 1px;
+}
+section#topo nav{
+	background-color: rgba(13,71,161, 0.4);
+	padding: 1em;
+	height: 6.2em;	
+}
+section#topo{
+	background-color: rgb(13,71,161);
+	padding-bottom: 30px;
+}
+section#topo div.perfil input{margin-top:53px ;height: 155px;width: 180px;margin-left: 550px;}
+.perfil{
+	padding-left:550px;
+	padding-top: 50px;
+}
+
+
+/*CSS da section meio*/
+section#meio{
+	background-color: #f5f5f5 ;
+}
+section#meio div form.formNomes,
+section#meio div form.formSobreVoce,
+section#meio div form.formMateriaPreco,
+section#meio div form.formTelefone{
+	background-color: white;
+	width: 550px;
+	margin-left: 190px;
+	padding: 30px;
+	border-radius: 25px;
+}
+.descricao{
+	font-size: 20px;
+	color: #616161;
+	font-weight: 300;
+}
+
+section#meio .container{padding-top: 20px; padding-bottom: 50px;}
+div.divSobreNome{
+	margin-left: 100px!important;
+}
+section#meio div form.formNomes input{
+	width: 200px;
+	margin-left: 10px;
+}
+section#meio div form.formTelefone label{
+ margin-left: 0px!important;
+
+}
+section#meio div form.formTelefone input{
+ margin-left: 20px;
+ width: 300px;
+ 
+}
+section#meio div form.formSobreVoce textarea,section#meio div form.formMateriaPreco textarea{
+margin-left: 20px;
+ width: 400px;
+}
+.btnSalvar{
+	margin-left: 400px;
+	font-size: 15px;
+	text-transform: uppercase;
+	font-weight: 600;
+}
+
+/*CSS do footer*/
+footer.page-footer{
+	background-color:rgb(13,71,161);
+}
+#email_inline{
+	width: 300px;
+
+}
+div#social{padding-top: 20px}
+div#social ul li{
+	
+	width: 32px	;height: 	32px;
+	margin-right:13px ;
+	float: left;
+}
+div#social ul li a{
+	background-image: 	url('../imagens/sprite-social.png	');
+	display: 	block;
+	height: 	100%;
+	text-indent: 	-99999em;
+	color: #ffff;
+}
+div#social ul li:nth-child(1) a{background-position:0 0}
+div#social ul li:nth-child(2) a{background-position:-32px 0}
+div#social ul li:nth-child(3) a{background-position:-64px 0}
+div#social ul li:nth-child(4) a{background-position:-96px 0}
+div#social ul li:nth-child(5) a{background-position: -128px 0}
+
+div#social ul li:nth-child(1) a:hover{background-position:0  -32px}
+div#social ul li:nth-child(2) a:hover{background-position:-32px -32px}
+div#social ul li:nth-child(3) a:hover{background-position:-64px  -32px}
+div#social ul li:nth-child(4) a:hover{background-position:-96px  -32px}
+div#social ul li:nth-child(5) a:hover{background-position: -128px  -32px}
+.link_final {
+		color:white;
+		font-weight: 800;
+	
+	}
+div#modal2 h4{
+		margin-left:50px;
+		margin-bottom:50px; 
+	} 
+div#modal2 label{
+	font-size:19px;
+	margin-top:10px!important;
+	margin-left:90px;
+	color:white;
+} 
+div#modal2 input{
+	width: 500px;
+	margin-left: 30px;
+	margin-top: 5px;
+	margin-left:110px; 
+}
+div#modal2{
+	background-color:  rgb(13,71,161); color:white;
+}
+
+	/*Media queris*/
+@media screen and (max-width: 1024px) {
+	#base-menu{margin-left: 20px}
+	h2{padding-left:450px;}
+	section#topo div.perfil{padding-left: 420px;}
+	section#topo div.perfil input{margin-left: 420px!important;}
+	section#meio div form {
+		margin-left: 0px!important; 
+		width: auto!important;
+	}
+	.btnSalvar{margin-left: 300px;}
+	section#meio div form.formSobreVoce textarea,
+	section#meio div form.formMateriaPreco textarea{width: 90%;}
+	div#modal2 input{width: 350px}
+}
+
+@media screen and (max-width: 768px) {
+	h2{padding-left:280px;}
+	section#topo div.perfil{padding-left: 250px;}
+	section#topo div.perfil input{margin-left: 250px!important;}
+	section#meio div form {
+		margin-left: 0px!important; 
+		width: auto!important;}
+	.btnSalvar{margin-left: 245px;}
+	#social{padding-left: 90px!important;}
+}
+
+@media screen and (max-width: 375px) {
+
+	h2{padding-left: 140px;}
+	section#topo div.perfil{padding-left: 110px;}
+	section#topo div.perfil input{margin-left: 110px!important;}
+	section#meio div form {
+		margin-left: 0px!important; 
+		width: auto!important;
+	}
+	div.divSobreNome{margin-left: 0px!important;}
+	section#meio div form.formNomes input,	
+	section#meio div form.formTelefone input,
+	section#meio div form.formSobreVoce textarea,
+	section#meio div form.formMateriaPreco textarea{
+	width: 250px;margin-left: 10px;}
+	.btnSalvar{margin-left: 120px;}
+	#social{padding-left: 20px!important;}
+	div#modal2 input,div#modal2 label{
+		margin: 0px;
+		width:250px;
+	}
+	div#modal2 h4{
+		margin-left: 0px;
+	}
+}

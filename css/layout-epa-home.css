@@ -1,0 +1,218 @@
+	/*geral*/
+body{
+	font-family:"Open Sans";
+	
+}
+.paragrafo{
+font-size:14px ;
+color:#757575 
+}
+/* css da section topo*/
+
+.logo{
+	width:200px;
+	position: absolute	;
+	top: -10px;
+	left: -10px;
+}
+ section#topo div ul li a{
+	padding-right: 30px;
+	text-transform: uppercase;
+
+}
+section#topo div ul li a#menu-mobile-p{
+	padding-right: 30px;
+	font-weight:800 ;
+	text-transform: uppercase;
+
+}
+section#topo nav div ul li:nth-child(2) a{
+border-left: 1px solid white;
+}
+
+section#topo nav{
+	background-color: rgba(13,71,161, 0.4);
+	padding: 1em;
+	height: 6.2em;	
+}
+section#topo{
+	background-color: rgb(13,71,161);
+	padding-bottom: 50px;
+}
+
+section#topo div.row a#botao,section#topo div.row a#estudar{
+	width:160px ;
+	height: 60px;
+	padding-top: 10px;
+	font-size:15px ;
+	font-weight:800 ;
+	background-color: #1CE889;
+	border-radius: 5px;
+	font-family:Opens-sans;
+}
+
+.img{
+	width:600px;
+
+}
+/*css dos Modais*/
+#modal-login{
+	padding-left: 300px;
+	color: black;
+	font-weight: 300;
+}
+#modal-btnLogar{
+	padding-left: 280px!important;
+	padding-top: 20px;
+}
+#modalp{
+	font-size: 19px;
+}
+
+#modal1{
+	padding-top: 20px;
+	padding-bottom: 40px;
+}
+div#modal2 h4{
+		margin-left:50px;
+		margin-bottom:50px; 
+	} 
+div#modal2 label{
+	font-size:19px;
+	margin-top:10px!important;
+	margin-left:90px;
+	color:white;
+} 
+div#modal2 input{
+	width: 500px;
+	margin-left: 30px;
+	margin-top: 5px;
+	margin-left:110px; 
+}
+div#modal2{
+	background-color:  rgb(13,71,161); color:white;
+}
+
+/*css da section meio*/
+
+
+.estudando{
+	padding-top: 50px;
+	width:700px ;
+}
+
+.saiba{
+	color:#9e9e9e  ;
+	text-decoration: underline;}
+section#meio div h2{
+	padding-left: 120px;
+	padding-top: 160px;
+	font-weight: 600 ;
+}
+section#meio div p.p-meio {
+	padding-left: 140px;
+}
+section#meio div a{
+	padding-left: 210px;
+}
+.final{
+	padding-top: 50px;
+	padding-left: 200px;
+}
+
+/* css do footer*/
+
+footer.page-footer{
+	background-color:rgb(13,71,161);
+}
+#email_inline{
+	width: 300px;
+
+}
+div#social{padding-top: 20px}
+div#social ul li{
+	
+	width: 32px	;
+	height: 32px;
+	margin-right:13px ;
+	float: left;
+}
+div#social ul li a{
+	background-image: 	url('../imagens/sprite-social.png	');
+	display: 	block;
+	height: 	100%;
+	text-indent: 	-99999em;
+	color: #ffff;
+}
+div#social ul li:nth-child(1) a{background-position:0 0}
+div#social ul li:nth-child(2) a{background-position:-32px 0}
+div#social ul li:nth-child(3) a{background-position:-64px 0}
+div#social ul li:nth-child(4) a{background-position:-96px 0}
+div#social ul li:nth-child(5) a{background-position: -128px 0}
+
+div#social ul li:nth-child(1) a:hover{background-position:0  -32px}
+div#social ul li:nth-child(2) a:hover{background-position:-32px -32px}
+div#social ul li:nth-child(3) a:hover{background-position:-64px  -32px}
+div#social ul li:nth-child(4) a:hover{background-position:-96px  -32px}
+div#social ul li:nth-child(5) a:hover{background-position: -128px  -32px}
+.link_final {	
+		color:white;
+		font-weight:800;
+	
+	}
+
+
+/*Media queris*/
+@media screen and (max-width: 1024px) {
+		section#topo header div nav div ul li a#login{ padding-right: 60px!important;} 
+		.img{width: 490px;}
+		#modal-btnLogar ,#modal-login{
+    padding-left: 220px!important;
+}
+div#modal2 input{width: 350px}
+}
+@media screen and (max-width: 768px){
+	.img{width: 320px;}
+	section#topo header  div nav div a#menu{
+		padding-left: 100px;
+	}
+	h2{
+		font-size: 2.3em;
+		padding-top:90px!important; 
+	}
+	p.p-meio{
+		font-size: 19px;
+	}
+	a.saiba{font-size: 17px;
+		padding-left: 150px!important;}
+	.final{padding-top:10px!important;
+		padding-left: 20px;}
+	#social{padding-left: 90px!important;}
+	#modal-btnLogar ,#modal-login{
+    padding-left: 220px!important;
+}
+@media screen and (max-width: 375px) {
+	.img{width:360px;}
+	section#meio div h2,section#meio div p.p-meio{
+		padding-top: 0px;
+		padding-left: 40px;
+	}
+	h2{font-size: 3em;}
+	section#meio div a.saiba{padding: 0px; padding-left: 100px;}
+	div.final{padding: 0px; padding-left: 10px}
+	#social{padding:20px!important;}
+	a.saiba{padding-left:90px!important;}
+	section#topo header  div nav div a#menu{
+		padding-left: 0px;
+	}
+	#modal-btnLogar ,#modal-login{
+    padding-left: 95px!important;
+	}
+	div#modal2 input,div#modal2 label{
+		margin: 0px;
+		width:250px;
+	}
+	div#modal2 h4{
+		margin-left: 0px;
+	}
+}

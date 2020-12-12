@@ -1,0 +1,167 @@
+@charset="utf-8";
+/*Css geral*/
+body{font-family: "Open Sans"}
+/*Css da section do topo*/
+.logo{
+	width:200px;
+	position: absolute	;
+	top: -30px;
+	left: -10px;
+}
+section#topo nav{
+  background-color: rgb(13,71,161);
+  padding: 1em;
+  height: 6.2em;	
+}
+.menu-principal {
+border-radius: 10px;
+background-image: linear-gradient(to bottom,#1565c0, rgb(13,71,161));
+text-shadow:0px 2px 0px black;
+}
+section#topo header nav div ul li a{
+	font-size: 18px;
+	text-transform: uppercase;
+	font-weight: 300;
+	letter-spacing: 1px;
+	padding-left: 30px;
+}
+section#topo header nav div ul li{border-left:  1px solid #0d47a1;	}
+section#topo{
+  background-color: rgb(13,71,161);
+  padding-bottom: 50px;
+  color: white;
+}
+#login{font-size: 20px;margin-right: 20px;}	
+
+/*css dos Modais*/
+#modal-login{
+	padding-left: 300px;
+	color: black;
+	font-weight: 300;
+}
+#modal-btnLogar{
+	padding-left: 280px!important;
+	padding-top: 20px;
+}
+#modalp{
+	font-size: 19px;
+}
+
+#modal1{
+	padding-top: 20px;
+	padding-bottom: 40px;
+}
+
+
+section#agenda div.container{
+	position: static;
+	top: 6em;
+	padding: 1em;
+	border-style: solid;
+	margin-top: 2em;
+	margin-bottom:2em; 
+}
+table #ano{
+	text-align: right;
+}
+table tr#diasDaSemana th{
+	text-align: center;
+}
+table tr td{
+	border-style: solid;
+	text-align: right;
+	vertical-align: top;
+	width: 3em;
+	height: 10em;
+	font-size: 1em;
+}
+.botaoAgendar{
+	transition: opacity 2s;
+	text-align: center;
+	background-color: blue;
+	color: white;
+	font-style: bold;
+	border-radius: 2em;
+	position: relative;
+	top: 6em;
+    left: 0.25em;
+	width: 2em;
+	height: 2em;
+
+
+
+}
+#caixaAgenda{
+	position: absolute;
+	bottom: 1.5em;
+	top: 900px;
+	width: 300px;
+}
+p.agendado{
+	text-align: center;
+	font-style: bold;
+}
+
+
+
+
+
+/* css do footer*/
+
+footer.page-footer{
+	background-color:rgb(13,71,161);
+}
+#email_inline{
+	width: 300px;
+
+}
+div#social{padding-top: 20px}
+div#social ul li{
+	
+	width: 32px	;
+	height: 32px;
+	margin-right:13px ;
+	float: left;
+}
+div#social ul li a{
+	background-image: 	url('../imagens/sprite-social.png	');
+	display: 	block;
+	height: 	100%;
+	text-indent: 	-99999em;
+	color: #ffff;
+}
+div#social ul li:nth-child(1) a{background-position:0 0}
+div#social ul li:nth-child(2) a{background-position:-32px 0}
+div#social ul li:nth-child(3) a{background-position:-64px 0}
+div#social ul li:nth-child(4) a{background-position:-96px 0}
+div#social ul li:nth-child(5) a{background-position: -128px 0}
+
+div#social ul li:nth-child(1) a:hover{background-position:0  -32px}
+div#social ul li:nth-child(2) a:hover{background-position:-32px -32px}
+div#social ul li:nth-child(3) a:hover{background-position:-64px  -32px}
+div#social ul li:nth-child(4) a:hover{background-position:-96px  -32px}
+div#social ul li:nth-child(5) a:hover{background-position: -128px  -32px}
+.link_final {	
+		color:white;
+		font-weight: 800;
+	
+	}
+	div#modal2 h4{
+		margin-left:50px;
+		margin-bottom:50px; 
+	} 
+div#modal2 label{
+	font-size:19px;
+	margin-top:10px!important;
+	margin-left:90px;
+	color:white;
+} 
+div#modal2 input{
+	width: 500px;
+	margin-left: 30px;
+	margin-top: 5px;
+	margin-left:110px; 
+}
+div#modal2{
+	background-color:  rgb(13,71,161); color:white;
+}

@@ -1,0 +1,259 @@
+	/*Geral*/
+body{font-family:"Open Sans";}
+
+/*Section topo*/
+.logo{
+	width:200px;
+	position: absolute	;
+	top: -30px;
+	left: -10px;
+}
+.menu-principal {
+border-radius: 10px;
+background-image: linear-gradient(to bottom,#1565c0, rgb(13,71,161));
+text-shadow:0px 2px 0px black;
+}
+section#topo header nav div ul li a{
+	font-size: 18px;
+	text-transform: uppercase;
+	font-weight: 300;
+	letter-spacing: 1px;
+	padding-left: 30px;
+}
+section#topo header nav div ul li{border-left:  1px solid #0d47a1;	}
+ul#mobile-menu li a{
+	font-size: 20px;
+	margin: 30px;
+	font-weight: 300;
+	text-transform: uppercase; 
+}
+ul#mobile-menu li a.btn{
+	width: 150px;
+	margin-left: 50px;
+}
+ul#mobile-menu li a.inicio,ul#mobile-menu li a.perfil{margin-left: 60px;}
+ul#mobile-menu li a.agenda{margin-left: 50px;}
+ul#mobile-menu li a.mapa{margin-left: 65px;}
+#titulo{
+	margin-left: 350px;
+}
+h1{
+	margin-bottom: 0px;
+	font-size: 90px;
+	color: white;
+	font-weight: 300;
+	letter-spacing: 1px;
+}
+section#topo nav{
+	background-color: rgba(13,71,161, 0.4);
+	padding: 1em;
+	height: 6.2em;	
+}
+section#topo{
+	background-color: rgb(13,71,161);
+	padding-bottom: 60px;
+}
+section#topo div.perfil input{margin-top:53px ;height: 155px;width: 180px;margin-left: 550px;}
+.perfil{
+	padding-left:550px;
+	padding-top: 50px;
+}
+/*Css da section meio*/
+section#meio{
+background-color: #eeeeee  ;
+padding-top: 50px;
+padding-bottom: 150px;
+}
+section#meio div#mapa{
+	height: 450px;
+	width: 100%;
+}
+section#meio a{
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+section#meio h4{margin-left: 30px;}
+section#meio #divFiltros{
+	margin-top: 40px;
+}
+section#meio label{
+	font-size: 20px;
+}
+section#meio div.input-field{
+	margin-left: 40px;
+}
+section#meio div#divBtnFiltro{padding-top: 20px; margin-left: 50px;}
+section#meio #divBtnLocalizacao{
+	margin-left: 320px;
+	margin-top: 10px;
+}
+/*Css do modal do perfil*/
+.modal, #divBtnChatPerfil{
+	width: 30%;
+	background-color: #1565c0;
+    color: white;
+    margin: auto
+}
+#divPerfil{
+	border-radius: 28px;
+}
+#perfilEncontrado{
+	font-size: 40px;
+	font-weight: 800;
+	margin-left: 20px
+}
+#fotoParaMostrar{
+	margin-left: 130px
+}
+#nomeSobrenomeProfessor{
+	font-size: 25px;
+    margin-left: 100px;
+    margin-bottom: 31px;
+    text-transform: capitalize;
+}
+#legendaTelefone{
+	font-size: 25px;
+    color: #424242;
+    margin-bottom: 0px;
+    margin-left: 127px;
+}
+#telefone{
+	margin-left: 120px;
+	font-size: 20px;
+    margin-top: 0px;
+}
+#legendaumPoucoSobreVoce{
+	font-size: 19px;
+    margin-left: 95px;
+    margin-bottom: 0px;
+    color: #424242;
+}
+#umPoucoSobreVoce{
+	margin-top: 6px;
+    margin-left: 40px;
+    font-size: 17px;
+}
+#legendaummateriaPreco{
+	font-size: 20px;
+    margin-left: 105px;
+    margin-bottom: 0px;
+    color: #424242;
+}
+#materiaPreco{
+    font-size: 17px;
+    margin-left: 36px;
+    margin-top: 6px;
+
+}
+/* css do footer*/
+
+footer.page-footer{
+	background-color:rgb(13,71,161);
+}
+#email_inline{
+	width: 300px;
+
+}
+div#social{padding-top: 20px}
+div#social ul li{
+	
+	width: 32px	;
+	height: 32px;
+	margin-right:13px ;
+	float: left;
+}
+div#social ul li a{
+	background-image: 	url('../imagens/sprite-social.png	');
+	display: 	block;
+	height: 	100%;
+	text-indent: 	-99999em;
+	color: #ffff;
+}
+div#social ul li:nth-child(1) a{background-position:0 0}
+div#social ul li:nth-child(2) a{background-position:-32px 0}
+div#social ul li:nth-child(3) a{background-position:-64px 0}
+div#social ul li:nth-child(4) a{background-position:-96px 0}
+div#social ul li:nth-child(5) a{background-position: -128px 0}
+
+div#social ul li:nth-child(1) a:hover{background-position:0  -32px}
+div#social ul li:nth-child(2) a:hover{background-position:-32px -32px}
+div#social ul li:nth-child(3) a:hover{background-position:-64px  -32px}
+div#social ul li:nth-child(4) a:hover{background-position:-96px  -32px}
+div#social ul li:nth-child(5) a:hover{background-position: -128px  -32px}
+.link_final {	
+		color:white;
+		font-weight:800;
+	
+	}
+div#modal2 h4{
+		margin-left:50px;
+		margin-bottom:50px; 
+	} 
+div#modal2 label{
+	font-size:19px;
+	margin-top:10px!important;
+	margin-left:90px;
+	color:white;
+} 
+div#modal2 input{
+	width: 500px;
+	margin-left: 30px;
+	margin-top: 5px;
+	margin-left:110px; 
+}
+div#modal2{
+	background-color:  rgb(13,71,161); color:white;
+}
+
+/*Media queris*/
+
+@media screen and (max-width: 1024px) {
+	 section#topo div#titulo{
+	margin-left: 250px!important;
+}
+section#meio #divBtnLocalizacao{
+	margin-left: 180px;
+	margin-top: 50px;
+}
+section#meio div.input-field{
+	margin-left: 30px;
+	margin-top: 20px;
+	width: 40%;
+}
+section#meio div#divBtnFiltro{ margin-left: 220px;}
+
+}
+
+
+@media screen and (max-width: 768px ){
+	 section#topo div#titulo{
+	margin-left: 210px!important;
+}
+section#meio #divBtnLocalizacao{
+	margin-left: 150px;
+	margin-top: 50px;
+}
+section#meio div.input-field{
+	margin-left: 30px;
+	margin-top: 20px;
+	width: 40%;
+}
+section#meio div#divBtnFiltro{ margin-left: 190px;}
+}
+
+
+@media screen and (max-width: 375px) {
+section#topo div#titulo{
+	margin-left: 0px!important;
+}
+section#meio #divBtnLocalizacao{
+	margin-left: 30px;
+	margin-top: 50px;
+}
+section#meio div.input-field{
+	margin-left: 0px;
+	margin-top: 20px;
+}
+section#meio div#divBtnFiltro{ margin-left: 60px;}
+}

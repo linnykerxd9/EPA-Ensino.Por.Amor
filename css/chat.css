@@ -1,0 +1,436 @@
+/*Css Geral*/
+body {
+  color: #777;
+  background: #f9f9f9;
+    font-family: "Open Sans";
+}
+/*Section topo*/
+.col{flex-basis:auto;}
+.logo{
+  width:200px;
+  position: absolute  ;
+  top: -30px;
+  left: -10px;
+}
+.menu-principal {
+border-radius: 10px;
+background-image: linear-gradient(to bottom,#1565c0, rgb(13,71,161));
+text-shadow:0px 2px 0px black;
+}
+section#topo header nav div ul li a{
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 300;
+  letter-spacing: 1px;
+  padding-left: 30px;
+}
+section#topo header nav div ul li{border-left:  1px solid #0d47a1;  }
+ul#mobile-menu li a{
+  font-size: 20px;
+  margin: 30px;
+  font-weight: 300;
+  text-transform: uppercase; 
+}
+ul#mobile-menu li a.btn{
+  width: 150px;
+  margin-left: 50px;
+}
+ul#mobile-menu li a.inicio,ul#mobile-menu li a.perfil{margin-left: 60px;}
+ul#mobile-menu li a.agenda{margin-left: 50px;}
+ul#mobile-menu li a.mapa{margin-left: 65px;}
+#titulo{
+  margin-left: 300px;
+}
+h1{
+  margin-bottom: 0px;
+  font-size: 60px;
+  color: white;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+section#topo nav{
+  background-color: rgba(13,71,161, 0.4);
+  padding: 1em;
+  height: 8em;  
+}
+section#topo{
+  background-color: rgb(13,71,161);
+  padding-bottom: 60px;
+}
+section#topo div.perfil input{margin-top:53px ;height: 155px;width: 180px;margin-left: 550px;}
+.perfil{
+  padding-left:550px;
+  padding-top: 50px;
+}
+
+/*Css do meio*/
+
+div.nomeConversa{
+  background-color: #eeeeee ;
+  height: 100%;
+}
+div.nomeConversa div.row{
+  margin-bottom: 1px;
+}
+div.nomeConversa img{
+  width: 45px;
+  height: 45px;
+  margin: 10px 20px;
+  margin-top: 10px;
+}
+div.nomeConversa p{
+  margin-top: 25px;
+  font-size: 14px;
+  font-weight: 300;
+  color: black;
+  float: left;
+  text-transform: uppercase;
+}
+div.nomeConversa a{
+    margin-left: 150px;
+    margin-top: 15px;
+}
+
+ /* Css do modal pagar */
+
+div.divModalPagamento div.modal-content{
+   background-color:white; 
+  color:black;
+  width: 100%;
+  height: 100%;
+}
+div.divModalPagamento div.modal-content div#divTitularCartaoChat{
+  margin-left: 0!important;
+  height: auto;
+}
+div.divModalPagamento div.modal-content div#divDataValidade{
+  margin-left: 0px;
+}
+div.divModalPagamento div.modal-content div.divBtnPagar a{
+  margin-left: 280px;
+}
+div.divModalPagamento div.modal-content label{
+  background-color: white;
+  color: black;
+}
+.bg-white {
+  background-color: #fff;
+}
+
+.friend-list {
+  list-style: none;
+margin-left: -40px;
+}
+.active {
+    background-color: #666;
+    color: white;
+}
+.friend-list li {
+  border-bottom: 1px solid #eee;
+  margin-left: 30px;
+}
+
+.friend-list li a img {
+  float: left;
+  width: 45px;
+  height: 45px;
+  margin-right: 10px;
+}
+
+ .friend-list li a {
+  position: relative;
+  display: block;
+  padding: 10px;
+  transition: all .2s ease;
+  -webkit-transition: all .2s ease;
+  -moz-transition: all .2s ease;
+  -ms-transition: all .2s ease;
+  -o-transition: all .2s ease;
+}
+#contatos{
+  font-size: 26px;
+}
+.friend-list li.active a {
+  background-color: #f1f5fc;
+}
+
+.friend-list li a .friend-name, 
+.friend-list li a .friend-name:hover {
+  color: #777;
+}
+
+.friend-list li a .last-message {
+  width: 65%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.friend-list li a .time {
+  position: absolute;
+  top: 10px;
+  right: 8px;
+}
+
+small, .small {
+  font-size: 85%;
+}
+
+.friend-list li a .chat-alert {
+  position: absolute;
+  right: 8px;
+  top: 27px;
+  font-size: 10px;
+  padding: 3px 5px;
+}
+
+div#chatMobile{
+  display: none;
+}
+
+.chat {
+    list-style: none;
+    margin: 0;
+}
+
+.chat-message{
+    background: #f9f9f9;  
+}
+
+.chat li img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50em;
+  -moz-border-radius: 50em;
+  -webkit-border-radius: 50em;
+}
+
+img {
+  max-width: 100%;
+}
+
+.chat-body {
+  padding-bottom: 20px;
+}
+
+.chat li.left .chat-body {
+  margin-left: 10px;
+  background-color: #fff;
+}
+
+.chat li .chat-body {
+  position: relative;
+  font-size: 11px;
+  padding: 10px;
+  border: 1px solid #f1f5fc;
+  box-shadow: 0 1px 1px rgba(0,0,0,.05);
+  -moz-box-shadow: 0 1px 1px rgba(0,0,0,.05);
+  -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.05);
+}
+
+.chat li .chat-body .header {
+  padding-bottom: 5px;
+  border-bottom: 1px solid #f1f5fc;
+}
+
+.chat li .chat-body p {
+  margin: 0;
+}
+
+.chat li.left .chat-body:before {
+  position: absolute;
+  top: 10px;
+  left: -8px;
+  display: inline-block;
+  background: #fff;
+  width: 16px;
+  height: 16px;
+  border-top: 1px solid #f1f5fc;
+  border-left: 1px solid #f1f5fc;
+  content: '';
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+}
+
+.chat li.right .chat-body:before {
+  position: absolute;
+  top: 10px;
+  right: -8px;
+  display: inline-block;
+  background: #fff;
+  width: 16px;
+  height: 16px;
+  border-top: 1px solid #f1f5fc;
+  border-right: 1px solid #f1f5fc;
+  content: '';
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+}
+ul.chat li:nth-child(1){
+  margin-top: 10px;
+}
+.chat li.right .chat-body {
+  margin-right: 10px;
+  background-color: #fff;
+}
+
+.chat-box {
+/*  
+  position: fixed;
+  bottom: 0;
+  left: 444px;
+  right: 0;
+*/
+  padding: 15px;
+  border-top: 1px solid #eee;
+  transition: all .5s ease;
+  -webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  -ms-transition: all .5s ease;
+  -o-transition: all .5s ease;
+}
+
+.primary-font {
+  color: #3c8dbc;
+}
+
+a:hover, a:active, a:focus {
+  text-decoration: none;
+  outline: 0;
+}
+
+nav {
+	background-color: grey;
+
+	
+}
+label {
+	font-size: 20px; 
+	color: black;
+}
+
+/*css do footer*/
+
+footer.page-footer{
+   background-color: rgb(13,71,161);
+}
+#email_inline{
+   width: 300px;
+}
+div#social{
+   padding-top: 20px;
+}
+div#social ul li{
+   height: 32px; width: 32px;
+   margin-right: 13px;
+   float: left;
+         }
+div#social ul li a{
+   background-image: url('../imagens/sprite-social.png');display: block;height:100%;
+   color: #ffff;
+   text-indent: -99999em;
+}
+div#social ul li:nth-child(1) a{background-position: 0 0 }
+div#social ul li:nth-child(2) a{background-position: -32px 0 }
+div#social ul li:nth-child(3) a{background-position: -64px 0 }
+div#social ul li:nth-child(4) a{background-position: -96px 0 }
+div#social ul li:nth-child(5) a{background-position: -128px 0 }
+
+div#social ul li:nth-child(1) a:hover{background-position: 0 -32px}
+div#social ul li:nth-child(2) a:hover{background-position: -32px -32px }
+div#social ul li:nth-child(3) a:hover{background-position: -64px -32px }
+div#social ul li:nth-child(4) a:hover{background-position: -96px 32px}
+div#social ul li:nth-child(5) a:hover{background-position: -128px -32px}
+.link_final{
+   color:white;
+   font-weight: 800;
+}
+div#modal2 h4{
+    margin-left:50px;
+    margin-bottom:50px; 
+  } 
+div#modal2 label{
+  font-size:19px;
+  margin-top:10px!important;
+  margin-left:90px;
+  color:white;
+  background-color:rgb(13,71,161) ;
+} 
+div#modal2 input{
+  width: 500px;
+  margin-left: 30px;
+  margin-top: 5px;
+  margin-left:110px; 
+}
+div#modal2,.modal-content{
+  background-color:  rgb(13,71,161); 
+  color:white;
+  border: none;
+  width: 59%;
+}
+
+/*Media queris*/
+@media screen and (max-width: 768px) {
+    div#titulo{
+      margin: 0;
+    }
+     div.nomeConversa{
+      padding-bottom: 10px;
+    }
+    div.fotoPerfilConversa {
+      margin-left: 40%;
+    }
+    div.nomeConversa a{
+      margin-left: 40%!important;
+      margin-top: 0px;
+    }
+    
+    div.nomeConversa p{
+      margin-left: 50%;
+    }
+}
+
+@media screen and (max-width: 375px) {
+  div#titulo {
+    margin: 0;
+
+  }
+  div#chatMobile{
+  display:flex;
+ 
+}
+  div#chatMobile div.container{
+        border-bottom: 1px solid grey;
+  }
+  div#chatMobile h3{
+     margin-left: 28%;
+     padding-bottom: 5px;
+  }
+  div#professorChat,
+  div#amigaChat,
+  div#carlosChat,
+  div#adrianoChat,
+  div#priscilaChat{
+      padding-top: 30px!important;
+    }
+    div.nomeConversa{
+      padding-bottom: 20px;
+    }
+    div.fotoPerfilConversa {
+      margin-left: 30%;
+    }
+    div.nomeConversa a{
+      margin-left: 25%!important;
+      margin-top: 0px;
+    }
+    
+    div.nomeConversa p{
+      margin-left: 25%;
+    }
+}
