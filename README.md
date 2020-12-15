@@ -8,8 +8,8 @@ Nosso projeto tem a finalidade de ajudar as pessoas a encontrarem professores de
 
 ## Integrantes :busts_in_silhouette:
 
-- Jonas Linnyker
+- Anderson
+- Jonas
 - Mirla 
 - Simone
-- Anderson
 
