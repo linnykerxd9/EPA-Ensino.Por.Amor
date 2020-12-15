@@ -12,7 +12,7 @@ Nosso projeto tem a finalidade de ajudar as pessoas a encontrarem professores de
 - Mirla 
 - Simone
 - Anderson
-- Leonardo
+- Leonardo.
 
 
 
